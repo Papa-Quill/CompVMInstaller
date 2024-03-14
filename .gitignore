@@ -49,3 +49,4 @@ Temporary Items
 #VS build folders
 bin/
 obj/
+/.vs/CompVMInstaller/FileContentIndex
