@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form2
+Partial Class MainForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,23 +23,24 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.Wizard = New System.Windows.Forms.TabPage()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
+        Me.TabControlMenus = New System.Windows.Forms.TabControl()
         Me.Advanced = New System.Windows.Forms.TabPage()
-        Me.PathLabel = New System.Windows.Forms.Label()
-        Me.UninstallButton = New System.Windows.Forms.Button()
-        Me.ClassTabs = New System.Windows.Forms.TabControl()
+        Me.CheckboxItemtest = New System.Windows.Forms.CheckBox()
+        Me.LabelPath = New System.Windows.Forms.Label()
+        Me.PictureBoxGuide = New System.Windows.Forms.PictureBox()
+        Me.BtnUninstall = New System.Windows.Forms.Button()
+        Me.TabControlClasses = New System.Windows.Forms.TabControl()
         Me.Scout = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxScoutMelee = New System.Windows.Forms.GroupBox()
         Me.ScoutHideMelee = New System.Windows.Forms.CheckBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxScoutSecondary = New System.Windows.Forms.GroupBox()
         Me.ScoutHideDrinks = New System.Windows.Forms.CheckBox()
         Me.ScoutHidePistols = New System.Windows.Forms.CheckBox()
         Me.ScoutHideThrowables = New System.Windows.Forms.CheckBox()
         Me.ScoutHideSecondaryInspect = New System.Windows.Forms.CheckBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxScoutPrimary = New System.Windows.Forms.GroupBox()
         Me.ScoutHideShortstop = New System.Windows.Forms.CheckBox()
         Me.ScoutHideShortstopPush = New System.Windows.Forms.CheckBox()
         Me.ScoutHideDoubleBarrels = New System.Windows.Forms.CheckBox()
@@ -47,111 +48,113 @@ Partial Class Form2
         Me.ScoutHideScatterguns = New System.Windows.Forms.CheckBox()
         Me.Sniper = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSniperMelee = New System.Windows.Forms.GroupBox()
         Me.SniperHideMelee = New System.Windows.Forms.CheckBox()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSniperSecondary = New System.Windows.Forms.GroupBox()
         Me.SniperHideSMGs = New System.Windows.Forms.CheckBox()
         Me.SniperHideThrowables = New System.Windows.Forms.CheckBox()
         Me.SniperHideSecondaryInspect = New System.Windows.Forms.CheckBox()
-        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSniperPrimary = New System.Windows.Forms.GroupBox()
         Me.SniperHideHuntsman = New System.Windows.Forms.CheckBox()
         Me.SniperHidePrimaryInspect = New System.Windows.Forms.CheckBox()
         Me.SniperHideRifles = New System.Windows.Forms.CheckBox()
         Me.Soldier = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSoldierMelee = New System.Windows.Forms.GroupBox()
         Me.SoldierHideMelee = New System.Windows.Forms.CheckBox()
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSoldierSecondary = New System.Windows.Forms.GroupBox()
         Me.SoldierHideBison = New System.Windows.Forms.CheckBox()
         Me.SoldierHideShotguns = New System.Windows.Forms.CheckBox()
         Me.SoldierHideBanners = New System.Windows.Forms.CheckBox()
         Me.SoldierHideSecondaryInspect = New System.Windows.Forms.CheckBox()
-        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSoldierPrimary = New System.Windows.Forms.GroupBox()
+        Me.BtnOriginalInfo = New System.Windows.Forms.Button()
         Me.SoldierHideMangler = New System.Windows.Forms.CheckBox()
         Me.SoldierHideOriginal = New System.Windows.Forms.CheckBox()
         Me.SoldierHidePrimaryInspect = New System.Windows.Forms.CheckBox()
         Me.SoldierHideRockets = New System.Windows.Forms.CheckBox()
         Me.Demoman = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxDemoMelee = New System.Windows.Forms.GroupBox()
         Me.DemomanHideMelee = New System.Windows.Forms.CheckBox()
-        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxDemoSecondary = New System.Windows.Forms.GroupBox()
         Me.DemomanHideStickybombs = New System.Windows.Forms.CheckBox()
         Me.DemomanHideSecondaryInspect = New System.Windows.Forms.CheckBox()
-        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxDemoPrimary = New System.Windows.Forms.GroupBox()
         Me.DemomanHidePrimaryInspect = New System.Windows.Forms.CheckBox()
         Me.DemomanHideGrenades = New System.Windows.Forms.CheckBox()
         Me.Medic = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox13 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxMedicMelee = New System.Windows.Forms.GroupBox()
         Me.MedicHideMelee = New System.Windows.Forms.CheckBox()
-        Me.GroupBox14 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxMedicSecondary = New System.Windows.Forms.GroupBox()
         Me.MedicHideMediguns = New System.Windows.Forms.CheckBox()
         Me.MedicHideSecondaryInspect = New System.Windows.Forms.CheckBox()
-        Me.GroupBox15 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxMedicPrimary = New System.Windows.Forms.GroupBox()
         Me.MedicHidePrimaryInspect = New System.Windows.Forms.CheckBox()
         Me.MedicHidePrimaries = New System.Windows.Forms.CheckBox()
         Me.Heavy = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox16 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxHeavyMelee = New System.Windows.Forms.GroupBox()
         Me.HeavyHideMelee = New System.Windows.Forms.CheckBox()
-        Me.GroupBox17 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxHeavySecondary = New System.Windows.Forms.GroupBox()
         Me.HeavyHideShotguns = New System.Windows.Forms.CheckBox()
         Me.HeavyHideConsumables = New System.Windows.Forms.CheckBox()
         Me.HeavyHideSecondaryInspect = New System.Windows.Forms.CheckBox()
-        Me.GroupBox18 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxHeavyPrimary = New System.Windows.Forms.GroupBox()
         Me.HeavyHidePrimaryInspect = New System.Windows.Forms.CheckBox()
         Me.HeavyHideMiniguns = New System.Windows.Forms.CheckBox()
         Me.Pyro = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox19 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxPyroMelee = New System.Windows.Forms.GroupBox()
         Me.PyroHideMelee = New System.Windows.Forms.CheckBox()
-        Me.GroupBox20 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxPyroSecondary = New System.Windows.Forms.GroupBox()
         Me.PyroHideShotguns = New System.Windows.Forms.CheckBox()
         Me.PyroHideFlareGuns = New System.Windows.Forms.CheckBox()
         Me.PyroHideThermalThruster = New System.Windows.Forms.CheckBox()
         Me.PyroHideGasPasser = New System.Windows.Forms.CheckBox()
         Me.PyroHideSecondaryInspect = New System.Windows.Forms.CheckBox()
-        Me.GroupBox21 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxPyroPrimary = New System.Windows.Forms.GroupBox()
         Me.PyroHidePrimaryInspect = New System.Windows.Forms.CheckBox()
         Me.PyroHideFlamethrowers = New System.Windows.Forms.CheckBox()
         Me.Spy = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox24 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSpyPrimary = New System.Windows.Forms.GroupBox()
         Me.SpyHidePrimaryInspect = New System.Windows.Forms.CheckBox()
         Me.SpyHideRevolvers = New System.Windows.Forms.CheckBox()
-        Me.GroupBox22 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSpyMelee = New System.Windows.Forms.GroupBox()
         Me.SpyHideMeleeInspect = New System.Windows.Forms.CheckBox()
         Me.SpyHideMelee = New System.Windows.Forms.CheckBox()
-        Me.GroupBox23 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSpySecondary = New System.Windows.Forms.GroupBox()
         Me.SpyHideSappers = New System.Windows.Forms.CheckBox()
-        Me.GroupBox28 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxSpyPDA = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SpyHideDisguiseKit = New System.Windows.Forms.CheckBox()
         Me.SpyHideDeadRinger = New System.Windows.Forms.CheckBox()
         Me.SpyHideInvisWatch = New System.Windows.Forms.CheckBox()
         Me.Engineer = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel11 = New System.Windows.Forms.TableLayoutPanel()
-        Me.GroupBox25 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxEngineerPrimary = New System.Windows.Forms.GroupBox()
         Me.EngineerHidePomson = New System.Windows.Forms.CheckBox()
         Me.EngineerHidePrimaryInspect = New System.Windows.Forms.CheckBox()
         Me.EngineerHideShotguns = New System.Windows.Forms.CheckBox()
-        Me.GroupBox26 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxEngineerMelee = New System.Windows.Forms.GroupBox()
         Me.EngineerHideGunslinger = New System.Windows.Forms.CheckBox()
         Me.EngineerHideMeleeInspect = New System.Windows.Forms.CheckBox()
         Me.EngineerHideWrenches = New System.Windows.Forms.CheckBox()
-        Me.GroupBox27 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxEngineerSecondary = New System.Windows.Forms.GroupBox()
         Me.EngineerHideShortCircuit = New System.Windows.Forms.CheckBox()
         Me.EngineerHidePistols = New System.Windows.Forms.CheckBox()
         Me.EngineerHideWrangler = New System.Windows.Forms.CheckBox()
         Me.EngineerHideSecondaryInspect = New System.Windows.Forms.CheckBox()
-        Me.GroupBox29 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxEngineerPDA = New System.Windows.Forms.GroupBox()
         Me.EngineerHideToolbox = New System.Windows.Forms.CheckBox()
         Me.EngineerHidePDA = New System.Windows.Forms.CheckBox()
         Me.ClassIconList = New System.Windows.Forms.ImageList(Me.components)
-        Me.InstallButton = New System.Windows.Forms.Button()
-        Me.TF2FolderBtn = New System.Windows.Forms.Button()
+        Me.BtnInstall = New System.Windows.Forms.Button()
+        Me.BtnSelectFolder = New System.Windows.Forms.Button()
         Me.Manual = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel12 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox30 = New System.Windows.Forms.GroupBox()
@@ -162,106 +165,92 @@ Partial Class Form2
         Me.LoadButton = New System.Windows.Forms.Button()
         Me.RefreshButton = New System.Windows.Forms.Button()
         Me.InputPath = New System.Windows.Forms.TextBox()
-        Me.AboutButton = New System.Windows.Forms.Button()
+        Me.BtnAbout = New System.Windows.Forms.Button()
         Me.ViewmodelTooltip = New System.Windows.Forms.ToolTip(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.LaunchTF2Button = New System.Windows.Forms.Button()
-        Me.ItemtestCheckbox = New System.Windows.Forms.CheckBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.GuidePictureBox = New System.Windows.Forms.PictureBox()
-        Me.TabControl1.SuspendLayout()
+        Me.BtnLaunchTF2 = New System.Windows.Forms.Button()
+        Me.TabControlMenus.SuspendLayout()
         Me.Advanced.SuspendLayout()
-        Me.ClassTabs.SuspendLayout()
+        CType(Me.PictureBoxGuide, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabControlClasses.SuspendLayout()
         Me.Scout.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.GroupBoxScoutMelee.SuspendLayout()
+        Me.GroupBoxScoutSecondary.SuspendLayout()
+        Me.GroupBoxScoutPrimary.SuspendLayout()
         Me.Sniper.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
+        Me.GroupBoxSniperMelee.SuspendLayout()
+        Me.GroupBoxSniperSecondary.SuspendLayout()
+        Me.GroupBoxSniperPrimary.SuspendLayout()
         Me.Soldier.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox8.SuspendLayout()
-        Me.GroupBox9.SuspendLayout()
+        Me.GroupBoxSoldierMelee.SuspendLayout()
+        Me.GroupBoxSoldierSecondary.SuspendLayout()
+        Me.GroupBoxSoldierPrimary.SuspendLayout()
         Me.Demoman.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
-        Me.GroupBox10.SuspendLayout()
-        Me.GroupBox11.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
+        Me.GroupBoxDemoMelee.SuspendLayout()
+        Me.GroupBoxDemoSecondary.SuspendLayout()
+        Me.GroupBoxDemoPrimary.SuspendLayout()
         Me.Medic.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
-        Me.GroupBox13.SuspendLayout()
-        Me.GroupBox14.SuspendLayout()
-        Me.GroupBox15.SuspendLayout()
+        Me.GroupBoxMedicMelee.SuspendLayout()
+        Me.GroupBoxMedicSecondary.SuspendLayout()
+        Me.GroupBoxMedicPrimary.SuspendLayout()
         Me.Heavy.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
-        Me.GroupBox16.SuspendLayout()
-        Me.GroupBox17.SuspendLayout()
-        Me.GroupBox18.SuspendLayout()
+        Me.GroupBoxHeavyMelee.SuspendLayout()
+        Me.GroupBoxHeavySecondary.SuspendLayout()
+        Me.GroupBoxHeavyPrimary.SuspendLayout()
         Me.Pyro.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
-        Me.GroupBox19.SuspendLayout()
-        Me.GroupBox20.SuspendLayout()
-        Me.GroupBox21.SuspendLayout()
+        Me.GroupBoxPyroMelee.SuspendLayout()
+        Me.GroupBoxPyroSecondary.SuspendLayout()
+        Me.GroupBoxPyroPrimary.SuspendLayout()
         Me.Spy.SuspendLayout()
         Me.TableLayoutPanel10.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
-        Me.GroupBox24.SuspendLayout()
-        Me.GroupBox22.SuspendLayout()
-        Me.GroupBox23.SuspendLayout()
-        Me.GroupBox28.SuspendLayout()
+        Me.GroupBoxSpyPrimary.SuspendLayout()
+        Me.GroupBoxSpyMelee.SuspendLayout()
+        Me.GroupBoxSpySecondary.SuspendLayout()
+        Me.GroupBoxSpyPDA.SuspendLayout()
         Me.Engineer.SuspendLayout()
         Me.TableLayoutPanel9.SuspendLayout()
         Me.TableLayoutPanel11.SuspendLayout()
-        Me.GroupBox25.SuspendLayout()
-        Me.GroupBox26.SuspendLayout()
-        Me.GroupBox27.SuspendLayout()
-        Me.GroupBox29.SuspendLayout()
+        Me.GroupBoxEngineerPrimary.SuspendLayout()
+        Me.GroupBoxEngineerMelee.SuspendLayout()
+        Me.GroupBoxEngineerSecondary.SuspendLayout()
+        Me.GroupBoxEngineerPDA.SuspendLayout()
         Me.Manual.SuspendLayout()
         Me.TableLayoutPanel12.SuspendLayout()
         Me.GroupBox30.SuspendLayout()
         Me.GroupBox31.SuspendLayout()
-        CType(Me.GuidePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TabControl1
+        'TabControlMenus
         '
-        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TabControlMenus.AccessibleName = "TabControlMenus"
+        Me.TabControlMenus.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TabControl1.Controls.Add(Me.Wizard)
-        Me.TabControl1.Controls.Add(Me.Advanced)
-        Me.TabControl1.Controls.Add(Me.Manual)
-        Me.TabControl1.Location = New System.Drawing.Point(6, 6)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(615, 614)
-        Me.TabControl1.TabIndex = 0
-        '
-        'Wizard
-        '
-        Me.Wizard.Location = New System.Drawing.Point(4, 22)
-        Me.Wizard.Name = "Wizard"
-        Me.Wizard.Padding = New System.Windows.Forms.Padding(3)
-        Me.Wizard.Size = New System.Drawing.Size(607, 588)
-        Me.Wizard.TabIndex = 2
-        Me.Wizard.Text = "Wizard"
-        Me.Wizard.UseVisualStyleBackColor = True
+        Me.TabControlMenus.Controls.Add(Me.Advanced)
+        Me.TabControlMenus.Controls.Add(Me.Manual)
+        Me.TabControlMenus.Location = New System.Drawing.Point(6, 6)
+        Me.TabControlMenus.Name = "TabControlMenus"
+        Me.TabControlMenus.SelectedIndex = 0
+        Me.TabControlMenus.Size = New System.Drawing.Size(615, 614)
+        Me.TabControlMenus.TabIndex = 0
         '
         'Advanced
         '
-        Me.Advanced.Controls.Add(Me.ItemtestCheckbox)
-        Me.Advanced.Controls.Add(Me.PathLabel)
-        Me.Advanced.Controls.Add(Me.GuidePictureBox)
-        Me.Advanced.Controls.Add(Me.UninstallButton)
-        Me.Advanced.Controls.Add(Me.ClassTabs)
-        Me.Advanced.Controls.Add(Me.InstallButton)
-        Me.Advanced.Controls.Add(Me.TF2FolderBtn)
+        Me.Advanced.Controls.Add(Me.CheckboxItemtest)
+        Me.Advanced.Controls.Add(Me.LabelPath)
+        Me.Advanced.Controls.Add(Me.PictureBoxGuide)
+        Me.Advanced.Controls.Add(Me.BtnUninstall)
+        Me.Advanced.Controls.Add(Me.TabControlClasses)
+        Me.Advanced.Controls.Add(Me.BtnInstall)
+        Me.Advanced.Controls.Add(Me.BtnSelectFolder)
         Me.Advanced.Location = New System.Drawing.Point(4, 22)
         Me.Advanced.Name = "Advanced"
         Me.Advanced.Padding = New System.Windows.Forms.Padding(3)
@@ -270,46 +259,77 @@ Partial Class Form2
         Me.Advanced.Text = "Advanced"
         Me.Advanced.UseVisualStyleBackColor = True
         '
-        'PathLabel
+        'CheckboxItemtest
         '
-        Me.PathLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.PathLabel.AutoSize = True
-        Me.PathLabel.Location = New System.Drawing.Point(187, 565)
-        Me.PathLabel.Name = "PathLabel"
-        Me.PathLabel.Size = New System.Drawing.Size(142, 13)
-        Me.PathLabel.TabIndex = 8
-        Me.PathLabel.Text = "Please select your TF2 path."
+        Me.CheckboxItemtest.AccessibleName = "CheckboxItemtest"
+        Me.CheckboxItemtest.AutoSize = True
+        Me.CheckboxItemtest.Enabled = False
+        Me.CheckboxItemtest.Location = New System.Drawing.Point(376, 564)
+        Me.CheckboxItemtest.Name = "CheckboxItemtest"
+        Me.CheckboxItemtest.Size = New System.Drawing.Size(63, 17)
+        Me.CheckboxItemtest.TabIndex = 9
+        Me.CheckboxItemtest.Text = "Itemtest"
+        Me.CheckboxItemtest.UseVisualStyleBackColor = True
+        Me.CheckboxItemtest.Visible = False
         '
-        'UninstallButton
+        'LabelPath
         '
-        Me.UninstallButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.UninstallButton.Location = New System.Drawing.Point(445, 560)
-        Me.UninstallButton.Name = "UninstallButton"
-        Me.UninstallButton.Size = New System.Drawing.Size(75, 23)
-        Me.UninstallButton.TabIndex = 6
-        Me.UninstallButton.Text = "Uninstall"
-        Me.UninstallButton.UseVisualStyleBackColor = True
+        Me.LabelPath.AccessibleName = "LabelPath"
+        Me.LabelPath.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.LabelPath.AutoSize = True
+        Me.LabelPath.Location = New System.Drawing.Point(187, 568)
+        Me.LabelPath.Name = "LabelPath"
+        Me.LabelPath.Size = New System.Drawing.Size(142, 13)
+        Me.LabelPath.TabIndex = 8
+        Me.LabelPath.Text = "Please select your TF2 path."
         '
-        'ClassTabs
+        'PictureBoxGuide
         '
-        Me.ClassTabs.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.PictureBoxGuide.AccessibleName = "PictureBoxGuide"
+        Me.PictureBoxGuide.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ClassTabs.Controls.Add(Me.Scout)
-        Me.ClassTabs.Controls.Add(Me.Sniper)
-        Me.ClassTabs.Controls.Add(Me.Soldier)
-        Me.ClassTabs.Controls.Add(Me.Demoman)
-        Me.ClassTabs.Controls.Add(Me.Medic)
-        Me.ClassTabs.Controls.Add(Me.Heavy)
-        Me.ClassTabs.Controls.Add(Me.Pyro)
-        Me.ClassTabs.Controls.Add(Me.Spy)
-        Me.ClassTabs.Controls.Add(Me.Engineer)
-        Me.ClassTabs.ImageList = Me.ClassIconList
-        Me.ClassTabs.Location = New System.Drawing.Point(3, 350)
-        Me.ClassTabs.Name = "ClassTabs"
-        Me.ClassTabs.Padding = New System.Drawing.Point(4, 4)
-        Me.ClassTabs.SelectedIndex = 0
-        Me.ClassTabs.Size = New System.Drawing.Size(601, 204)
-        Me.ClassTabs.TabIndex = 0
+        Me.PictureBoxGuide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBoxGuide.Image = Global.CompVMInstaller.My.Resources.Resources.compviewmodelbannersmall
+        Me.PictureBoxGuide.Location = New System.Drawing.Point(3, 6)
+        Me.PictureBoxGuide.Name = "PictureBoxGuide"
+        Me.PictureBoxGuide.Size = New System.Drawing.Size(598, 341)
+        Me.PictureBoxGuide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxGuide.TabIndex = 7
+        Me.PictureBoxGuide.TabStop = False
+        '
+        'BtnUninstall
+        '
+        Me.BtnUninstall.AccessibleName = "BtnUninstall"
+        Me.BtnUninstall.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnUninstall.Location = New System.Drawing.Point(445, 563)
+        Me.BtnUninstall.Name = "BtnUninstall"
+        Me.BtnUninstall.Size = New System.Drawing.Size(75, 23)
+        Me.BtnUninstall.TabIndex = 6
+        Me.BtnUninstall.Text = "Uninstall"
+        Me.BtnUninstall.UseVisualStyleBackColor = True
+        '
+        'TabControlClasses
+        '
+        Me.TabControlClasses.AccessibleName = "TabControlClasses"
+        Me.TabControlClasses.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabControlClasses.Controls.Add(Me.Scout)
+        Me.TabControlClasses.Controls.Add(Me.Soldier)
+        Me.TabControlClasses.Controls.Add(Me.Pyro)
+        Me.TabControlClasses.Controls.Add(Me.Demoman)
+        Me.TabControlClasses.Controls.Add(Me.Heavy)
+        Me.TabControlClasses.Controls.Add(Me.Engineer)
+        Me.TabControlClasses.Controls.Add(Me.Medic)
+        Me.TabControlClasses.Controls.Add(Me.Sniper)
+        Me.TabControlClasses.Controls.Add(Me.Spy)
+        Me.TabControlClasses.ImageList = Me.ClassIconList
+        Me.TabControlClasses.Location = New System.Drawing.Point(3, 353)
+        Me.TabControlClasses.Name = "TabControlClasses"
+        Me.TabControlClasses.Padding = New System.Drawing.Point(4, 4)
+        Me.TabControlClasses.SelectedIndex = 0
+        Me.TabControlClasses.Size = New System.Drawing.Size(601, 204)
+        Me.TabControlClasses.TabIndex = 0
         '
         'Scout
         '
@@ -332,9 +352,9 @@ Partial Class Form2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox3, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox2, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBoxScoutMelee, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBoxScoutSecondary, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBoxScoutPrimary, 0, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(6, 6)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -342,23 +362,25 @@ Partial Class Form2
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(581, 163)
         Me.TableLayoutPanel1.TabIndex = 0
         '
-        'GroupBox3
+        'GroupBoxScoutMelee
         '
-        Me.GroupBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxScoutMelee.AccessibleName = "GroupBoxScoutMelee"
+        Me.GroupBoxScoutMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox3.AutoSize = True
-        Me.GroupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox3.Controls.Add(Me.ScoutHideMelee)
-        Me.GroupBox3.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(189, 157)
-        Me.GroupBox3.TabIndex = 1
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Melee"
+        Me.GroupBoxScoutMelee.AutoSize = True
+        Me.GroupBoxScoutMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxScoutMelee.Controls.Add(Me.ScoutHideMelee)
+        Me.GroupBoxScoutMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxScoutMelee.Name = "GroupBoxScoutMelee"
+        Me.GroupBoxScoutMelee.Size = New System.Drawing.Size(189, 157)
+        Me.GroupBoxScoutMelee.TabIndex = 1
+        Me.GroupBoxScoutMelee.TabStop = False
+        Me.GroupBoxScoutMelee.Text = "Melee"
         '
         'ScoutHideMelee
         '
+        Me.ScoutHideMelee.AccessibleName = "ScoutHideMelee"
         Me.ScoutHideMelee.AutoSize = True
         Me.ScoutHideMelee.Location = New System.Drawing.Point(6, 19)
         Me.ScoutHideMelee.Name = "ScoutHideMelee"
@@ -367,26 +389,28 @@ Partial Class Form2
         Me.ScoutHideMelee.Text = "Hide Melee"
         Me.ScoutHideMelee.UseVisualStyleBackColor = True
         '
-        'GroupBox2
+        'GroupBoxScoutSecondary
         '
-        Me.GroupBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxScoutSecondary.AccessibleName = "GroupBoxScoutSecondary"
+        Me.GroupBoxScoutSecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox2.AutoSize = True
-        Me.GroupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox2.Controls.Add(Me.ScoutHideDrinks)
-        Me.GroupBox2.Controls.Add(Me.ScoutHidePistols)
-        Me.GroupBox2.Controls.Add(Me.ScoutHideThrowables)
-        Me.GroupBox2.Controls.Add(Me.ScoutHideSecondaryInspect)
-        Me.GroupBox2.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Secondary"
+        Me.GroupBoxScoutSecondary.AutoSize = True
+        Me.GroupBoxScoutSecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxScoutSecondary.Controls.Add(Me.ScoutHideDrinks)
+        Me.GroupBoxScoutSecondary.Controls.Add(Me.ScoutHidePistols)
+        Me.GroupBoxScoutSecondary.Controls.Add(Me.ScoutHideThrowables)
+        Me.GroupBoxScoutSecondary.Controls.Add(Me.ScoutHideSecondaryInspect)
+        Me.GroupBoxScoutSecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxScoutSecondary.Name = "GroupBoxScoutSecondary"
+        Me.GroupBoxScoutSecondary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxScoutSecondary.TabIndex = 1
+        Me.GroupBoxScoutSecondary.TabStop = False
+        Me.GroupBoxScoutSecondary.Text = "Secondary"
         '
         'ScoutHideDrinks
         '
+        Me.ScoutHideDrinks.AccessibleName = "ScoutHideDrinks"
         Me.ScoutHideDrinks.AutoSize = True
         Me.ScoutHideDrinks.Location = New System.Drawing.Point(6, 65)
         Me.ScoutHideDrinks.Name = "ScoutHideDrinks"
@@ -398,6 +422,7 @@ Partial Class Form2
         '
         'ScoutHidePistols
         '
+        Me.ScoutHidePistols.AccessibleName = "ScoutHidePistols"
         Me.ScoutHidePistols.AutoSize = True
         Me.ScoutHidePistols.Location = New System.Drawing.Point(6, 19)
         Me.ScoutHidePistols.Name = "ScoutHidePistols"
@@ -409,6 +434,7 @@ Partial Class Form2
         '
         'ScoutHideThrowables
         '
+        Me.ScoutHideThrowables.AccessibleName = "ScoutHideThrowables"
         Me.ScoutHideThrowables.AutoSize = True
         Me.ScoutHideThrowables.Location = New System.Drawing.Point(6, 42)
         Me.ScoutHideThrowables.Name = "ScoutHideThrowables"
@@ -421,6 +447,7 @@ Partial Class Form2
         '
         'ScoutHideSecondaryInspect
         '
+        Me.ScoutHideSecondaryInspect.AccessibleName = "ScoutHideSecondaryInspect"
         Me.ScoutHideSecondaryInspect.AutoSize = True
         Me.ScoutHideSecondaryInspect.Location = New System.Drawing.Point(6, 88)
         Me.ScoutHideSecondaryInspect.Name = "ScoutHideSecondaryInspect"
@@ -429,24 +456,25 @@ Partial Class Form2
         Me.ScoutHideSecondaryInspect.Text = "Hide Secondary Inspects"
         Me.ScoutHideSecondaryInspect.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'GroupBoxScoutPrimary
         '
-        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxScoutPrimary.AccessibleName = "GroupBoxScoutPrimary"
+        Me.GroupBoxScoutPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.AutoSize = True
-        Me.GroupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox1.Controls.Add(Me.ScoutHideShortstop)
-        Me.GroupBox1.Controls.Add(Me.ScoutHideShortstopPush)
-        Me.GroupBox1.Controls.Add(Me.ScoutHideDoubleBarrels)
-        Me.GroupBox1.Controls.Add(Me.ScoutHidePrimaryInspect)
-        Me.GroupBox1.Controls.Add(Me.ScoutHideScatterguns)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Primary"
+        Me.GroupBoxScoutPrimary.AutoSize = True
+        Me.GroupBoxScoutPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxScoutPrimary.Controls.Add(Me.ScoutHideShortstop)
+        Me.GroupBoxScoutPrimary.Controls.Add(Me.ScoutHideShortstopPush)
+        Me.GroupBoxScoutPrimary.Controls.Add(Me.ScoutHideDoubleBarrels)
+        Me.GroupBoxScoutPrimary.Controls.Add(Me.ScoutHidePrimaryInspect)
+        Me.GroupBoxScoutPrimary.Controls.Add(Me.ScoutHideScatterguns)
+        Me.GroupBoxScoutPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxScoutPrimary.Name = "GroupBoxScoutPrimary"
+        Me.GroupBoxScoutPrimary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxScoutPrimary.TabIndex = 0
+        Me.GroupBoxScoutPrimary.TabStop = False
+        Me.GroupBoxScoutPrimary.Text = "Primary"
         '
         'ScoutHideShortstop
         '
@@ -493,6 +521,7 @@ Partial Class Form2
         '
         'ScoutHideScatterguns
         '
+        Me.ScoutHideScatterguns.AccessibleName = "ScoutHideScatterguns"
         Me.ScoutHideScatterguns.AutoSize = True
         Me.ScoutHideScatterguns.Location = New System.Drawing.Point(6, 19)
         Me.ScoutHideScatterguns.Name = "ScoutHideScatterguns"
@@ -522,9 +551,9 @@ Partial Class Form2
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox4, 2, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox5, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.GroupBox6, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBoxSniperMelee, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBoxSniperSecondary, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.GroupBoxSniperPrimary, 0, 0)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(6, 6)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
@@ -532,23 +561,25 @@ Partial Class Form2
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(581, 163)
         Me.TableLayoutPanel2.TabIndex = 1
         '
-        'GroupBox4
+        'GroupBoxSniperMelee
         '
-        Me.GroupBox4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSniperMelee.AccessibleName = "GroupBoxSniperMelee"
+        Me.GroupBoxSniperMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox4.AutoSize = True
-        Me.GroupBox4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox4.Controls.Add(Me.SniperHideMelee)
-        Me.GroupBox4.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(189, 157)
-        Me.GroupBox4.TabIndex = 1
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Melee"
+        Me.GroupBoxSniperMelee.AutoSize = True
+        Me.GroupBoxSniperMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSniperMelee.Controls.Add(Me.SniperHideMelee)
+        Me.GroupBoxSniperMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxSniperMelee.Name = "GroupBoxSniperMelee"
+        Me.GroupBoxSniperMelee.Size = New System.Drawing.Size(189, 157)
+        Me.GroupBoxSniperMelee.TabIndex = 1
+        Me.GroupBoxSniperMelee.TabStop = False
+        Me.GroupBoxSniperMelee.Text = "Melee"
         '
         'SniperHideMelee
         '
+        Me.SniperHideMelee.AccessibleName = "SniperHideMelee"
         Me.SniperHideMelee.AutoSize = True
         Me.SniperHideMelee.Location = New System.Drawing.Point(6, 19)
         Me.SniperHideMelee.Name = "SniperHideMelee"
@@ -557,25 +588,27 @@ Partial Class Form2
         Me.SniperHideMelee.Text = "Hide Melee"
         Me.SniperHideMelee.UseVisualStyleBackColor = True
         '
-        'GroupBox5
+        'GroupBoxSniperSecondary
         '
-        Me.GroupBox5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSniperSecondary.AccessibleName = "GroupBoxSniperSecondary"
+        Me.GroupBoxSniperSecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox5.AutoSize = True
-        Me.GroupBox5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox5.Controls.Add(Me.SniperHideSMGs)
-        Me.GroupBox5.Controls.Add(Me.SniperHideThrowables)
-        Me.GroupBox5.Controls.Add(Me.SniperHideSecondaryInspect)
-        Me.GroupBox5.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox5.TabIndex = 1
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Secondary"
+        Me.GroupBoxSniperSecondary.AutoSize = True
+        Me.GroupBoxSniperSecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSniperSecondary.Controls.Add(Me.SniperHideSMGs)
+        Me.GroupBoxSniperSecondary.Controls.Add(Me.SniperHideThrowables)
+        Me.GroupBoxSniperSecondary.Controls.Add(Me.SniperHideSecondaryInspect)
+        Me.GroupBoxSniperSecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxSniperSecondary.Name = "GroupBoxSniperSecondary"
+        Me.GroupBoxSniperSecondary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxSniperSecondary.TabIndex = 1
+        Me.GroupBoxSniperSecondary.TabStop = False
+        Me.GroupBoxSniperSecondary.Text = "Secondary"
         '
         'SniperHideSMGs
         '
+        Me.SniperHideSMGs.AccessibleName = "SniperHideSMGs"
         Me.SniperHideSMGs.AutoSize = True
         Me.SniperHideSMGs.Location = New System.Drawing.Point(6, 19)
         Me.SniperHideSMGs.Name = "SniperHideSMGs"
@@ -587,6 +620,7 @@ Partial Class Form2
         '
         'SniperHideThrowables
         '
+        Me.SniperHideThrowables.AccessibleName = "SniperHideThrowables"
         Me.SniperHideThrowables.AutoSize = True
         Me.SniperHideThrowables.Location = New System.Drawing.Point(6, 42)
         Me.SniperHideThrowables.Name = "SniperHideThrowables"
@@ -599,6 +633,7 @@ Partial Class Form2
         '
         'SniperHideSecondaryInspect
         '
+        Me.SniperHideSecondaryInspect.AccessibleName = "SniperHideSecondaryInspect"
         Me.SniperHideSecondaryInspect.AutoSize = True
         Me.SniperHideSecondaryInspect.Location = New System.Drawing.Point(6, 65)
         Me.SniperHideSecondaryInspect.Name = "SniperHideSecondaryInspect"
@@ -607,25 +642,27 @@ Partial Class Form2
         Me.SniperHideSecondaryInspect.Text = "Hide Secondary Inspects"
         Me.SniperHideSecondaryInspect.UseVisualStyleBackColor = True
         '
-        'GroupBox6
+        'GroupBoxSniperPrimary
         '
-        Me.GroupBox6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSniperPrimary.AccessibleName = "GroupBoxSniperPrimary"
+        Me.GroupBoxSniperPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox6.AutoSize = True
-        Me.GroupBox6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox6.Controls.Add(Me.SniperHideHuntsman)
-        Me.GroupBox6.Controls.Add(Me.SniperHidePrimaryInspect)
-        Me.GroupBox6.Controls.Add(Me.SniperHideRifles)
-        Me.GroupBox6.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox6.TabIndex = 0
-        Me.GroupBox6.TabStop = False
-        Me.GroupBox6.Text = "Primary"
+        Me.GroupBoxSniperPrimary.AutoSize = True
+        Me.GroupBoxSniperPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSniperPrimary.Controls.Add(Me.SniperHideHuntsman)
+        Me.GroupBoxSniperPrimary.Controls.Add(Me.SniperHidePrimaryInspect)
+        Me.GroupBoxSniperPrimary.Controls.Add(Me.SniperHideRifles)
+        Me.GroupBoxSniperPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxSniperPrimary.Name = "GroupBoxSniperPrimary"
+        Me.GroupBoxSniperPrimary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxSniperPrimary.TabIndex = 0
+        Me.GroupBoxSniperPrimary.TabStop = False
+        Me.GroupBoxSniperPrimary.Text = "Primary"
         '
         'SniperHideHuntsman
         '
+        Me.SniperHideHuntsman.AccessibleName = "SniperHideHuntsman"
         Me.SniperHideHuntsman.AutoSize = True
         Me.SniperHideHuntsman.Location = New System.Drawing.Point(6, 42)
         Me.SniperHideHuntsman.Name = "SniperHideHuntsman"
@@ -637,6 +674,7 @@ Partial Class Form2
         '
         'SniperHidePrimaryInspect
         '
+        Me.SniperHidePrimaryInspect.AccessibleName = "SniperHidePrimaryInspect"
         Me.SniperHidePrimaryInspect.AutoSize = True
         Me.SniperHidePrimaryInspect.Location = New System.Drawing.Point(6, 65)
         Me.SniperHidePrimaryInspect.Name = "SniperHidePrimaryInspect"
@@ -647,6 +685,7 @@ Partial Class Form2
         '
         'SniperHideRifles
         '
+        Me.SniperHideRifles.AccessibleName = "SniperHideRifles"
         Me.SniperHideRifles.AutoSize = True
         Me.SniperHideRifles.Location = New System.Drawing.Point(6, 19)
         Me.SniperHideRifles.Name = "SniperHideRifles"
@@ -678,9 +717,9 @@ Partial Class Form2
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel3.Controls.Add(Me.GroupBox7, 2, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.GroupBox8, 1, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.GroupBox9, 0, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.GroupBoxSoldierMelee, 2, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.GroupBoxSoldierSecondary, 1, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.GroupBoxSoldierPrimary, 0, 0)
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(6, 6)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
@@ -688,23 +727,25 @@ Partial Class Form2
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(581, 163)
         Me.TableLayoutPanel3.TabIndex = 2
         '
-        'GroupBox7
+        'GroupBoxSoldierMelee
         '
-        Me.GroupBox7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSoldierMelee.AccessibleName = "GroupBoxSoldierMelee"
+        Me.GroupBoxSoldierMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox7.AutoSize = True
-        Me.GroupBox7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox7.Controls.Add(Me.SoldierHideMelee)
-        Me.GroupBox7.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(189, 157)
-        Me.GroupBox7.TabIndex = 1
-        Me.GroupBox7.TabStop = False
-        Me.GroupBox7.Text = "Melee"
+        Me.GroupBoxSoldierMelee.AutoSize = True
+        Me.GroupBoxSoldierMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSoldierMelee.Controls.Add(Me.SoldierHideMelee)
+        Me.GroupBoxSoldierMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxSoldierMelee.Name = "GroupBoxSoldierMelee"
+        Me.GroupBoxSoldierMelee.Size = New System.Drawing.Size(189, 157)
+        Me.GroupBoxSoldierMelee.TabIndex = 1
+        Me.GroupBoxSoldierMelee.TabStop = False
+        Me.GroupBoxSoldierMelee.Text = "Melee"
         '
         'SoldierHideMelee
         '
+        Me.SoldierHideMelee.AccessibleName = "SoldierHideMelee"
         Me.SoldierHideMelee.AutoSize = True
         Me.SoldierHideMelee.Location = New System.Drawing.Point(6, 19)
         Me.SoldierHideMelee.Name = "SoldierHideMelee"
@@ -713,26 +754,28 @@ Partial Class Form2
         Me.SoldierHideMelee.Text = "Hide Melee"
         Me.SoldierHideMelee.UseVisualStyleBackColor = True
         '
-        'GroupBox8
+        'GroupBoxSoldierSecondary
         '
-        Me.GroupBox8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSoldierSecondary.AccessibleName = "GroupBoxSoldierSecondary"
+        Me.GroupBoxSoldierSecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox8.AutoSize = True
-        Me.GroupBox8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox8.Controls.Add(Me.SoldierHideBison)
-        Me.GroupBox8.Controls.Add(Me.SoldierHideShotguns)
-        Me.GroupBox8.Controls.Add(Me.SoldierHideBanners)
-        Me.GroupBox8.Controls.Add(Me.SoldierHideSecondaryInspect)
-        Me.GroupBox8.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox8.TabIndex = 1
-        Me.GroupBox8.TabStop = False
-        Me.GroupBox8.Text = "Secondary"
+        Me.GroupBoxSoldierSecondary.AutoSize = True
+        Me.GroupBoxSoldierSecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSoldierSecondary.Controls.Add(Me.SoldierHideBison)
+        Me.GroupBoxSoldierSecondary.Controls.Add(Me.SoldierHideShotguns)
+        Me.GroupBoxSoldierSecondary.Controls.Add(Me.SoldierHideBanners)
+        Me.GroupBoxSoldierSecondary.Controls.Add(Me.SoldierHideSecondaryInspect)
+        Me.GroupBoxSoldierSecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxSoldierSecondary.Name = "GroupBoxSoldierSecondary"
+        Me.GroupBoxSoldierSecondary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxSoldierSecondary.TabIndex = 1
+        Me.GroupBoxSoldierSecondary.TabStop = False
+        Me.GroupBoxSoldierSecondary.Text = "Secondary"
         '
         'SoldierHideBison
         '
+        Me.SoldierHideBison.AccessibleName = "SoldierHideBison"
         Me.SoldierHideBison.AutoSize = True
         Me.SoldierHideBison.Location = New System.Drawing.Point(6, 65)
         Me.SoldierHideBison.Name = "SoldierHideBison"
@@ -744,6 +787,7 @@ Partial Class Form2
         '
         'SoldierHideShotguns
         '
+        Me.SoldierHideShotguns.AccessibleName = "SoldierHideShotguns"
         Me.SoldierHideShotguns.AutoSize = True
         Me.SoldierHideShotguns.Location = New System.Drawing.Point(6, 19)
         Me.SoldierHideShotguns.Name = "SoldierHideShotguns"
@@ -755,6 +799,7 @@ Partial Class Form2
         '
         'SoldierHideBanners
         '
+        Me.SoldierHideBanners.AccessibleName = "SoldierHideBanners"
         Me.SoldierHideBanners.AutoSize = True
         Me.SoldierHideBanners.Location = New System.Drawing.Point(6, 42)
         Me.SoldierHideBanners.Name = "SoldierHideBanners"
@@ -767,6 +812,7 @@ Partial Class Form2
         '
         'SoldierHideSecondaryInspect
         '
+        Me.SoldierHideSecondaryInspect.AccessibleName = "SoldierHideSecondaryInspect"
         Me.SoldierHideSecondaryInspect.AutoSize = True
         Me.SoldierHideSecondaryInspect.Location = New System.Drawing.Point(6, 88)
         Me.SoldierHideSecondaryInspect.Name = "SoldierHideSecondaryInspect"
@@ -775,27 +821,45 @@ Partial Class Form2
         Me.SoldierHideSecondaryInspect.Text = "Hide Secondary Inspects"
         Me.SoldierHideSecondaryInspect.UseVisualStyleBackColor = True
         '
-        'GroupBox9
+        'GroupBoxSoldierPrimary
         '
-        Me.GroupBox9.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSoldierPrimary.AccessibleName = "GroupBoxSoldierPrimary"
+        Me.GroupBoxSoldierPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox9.AutoSize = True
-        Me.GroupBox9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox9.Controls.Add(Me.Button1)
-        Me.GroupBox9.Controls.Add(Me.SoldierHideMangler)
-        Me.GroupBox9.Controls.Add(Me.SoldierHideOriginal)
-        Me.GroupBox9.Controls.Add(Me.SoldierHidePrimaryInspect)
-        Me.GroupBox9.Controls.Add(Me.SoldierHideRockets)
-        Me.GroupBox9.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox9.TabIndex = 0
-        Me.GroupBox9.TabStop = False
-        Me.GroupBox9.Text = "Primary"
+        Me.GroupBoxSoldierPrimary.AutoSize = True
+        Me.GroupBoxSoldierPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSoldierPrimary.Controls.Add(Me.BtnOriginalInfo)
+        Me.GroupBoxSoldierPrimary.Controls.Add(Me.SoldierHideMangler)
+        Me.GroupBoxSoldierPrimary.Controls.Add(Me.SoldierHideOriginal)
+        Me.GroupBoxSoldierPrimary.Controls.Add(Me.SoldierHidePrimaryInspect)
+        Me.GroupBoxSoldierPrimary.Controls.Add(Me.SoldierHideRockets)
+        Me.GroupBoxSoldierPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxSoldierPrimary.Name = "GroupBoxSoldierPrimary"
+        Me.GroupBoxSoldierPrimary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxSoldierPrimary.TabIndex = 0
+        Me.GroupBoxSoldierPrimary.TabStop = False
+        Me.GroupBoxSoldierPrimary.Text = "Primary"
+        '
+        'BtnOriginalInfo
+        '
+        Me.BtnOriginalInfo.AccessibleName = "BtnOriginalInfo"
+        Me.BtnOriginalInfo.FlatAppearance.BorderSize = 0
+        Me.BtnOriginalInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnOriginalInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnOriginalInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnOriginalInfo.Location = New System.Drawing.Point(98, 38)
+        Me.BtnOriginalInfo.Name = "BtnOriginalInfo"
+        Me.BtnOriginalInfo.Size = New System.Drawing.Size(47, 23)
+        Me.BtnOriginalInfo.TabIndex = 4
+        Me.BtnOriginalInfo.Text = "?"
+        Me.ViewmodelTooltip.SetToolTip(Me.BtnOriginalInfo, "Due to an animation bug, the Original is always" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "hidden if any other Soldier weap" &
+        "ons are hidden." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        Me.BtnOriginalInfo.UseVisualStyleBackColor = True
         '
         'SoldierHideMangler
         '
+        Me.SoldierHideMangler.AccessibleName = "SoldierHideMangler"
         Me.SoldierHideMangler.AutoSize = True
         Me.SoldierHideMangler.Location = New System.Drawing.Point(6, 137)
         Me.SoldierHideMangler.Name = "SoldierHideMangler"
@@ -807,6 +871,7 @@ Partial Class Form2
         '
         'SoldierHideOriginal
         '
+        Me.SoldierHideOriginal.AccessibleName = "SoldierHideOriginal"
         Me.SoldierHideOriginal.AutoSize = True
         Me.SoldierHideOriginal.Checked = True
         Me.SoldierHideOriginal.CheckState = System.Windows.Forms.CheckState.Checked
@@ -821,6 +886,7 @@ Partial Class Form2
         '
         'SoldierHidePrimaryInspect
         '
+        Me.SoldierHidePrimaryInspect.AccessibleName = "SoldierHidePrimaryInspect"
         Me.SoldierHidePrimaryInspect.AutoSize = True
         Me.SoldierHidePrimaryInspect.Location = New System.Drawing.Point(6, 65)
         Me.SoldierHidePrimaryInspect.Name = "SoldierHidePrimaryInspect"
@@ -831,6 +897,7 @@ Partial Class Form2
         '
         'SoldierHideRockets
         '
+        Me.SoldierHideRockets.AccessibleName = "SoldierHideRockets"
         Me.SoldierHideRockets.AutoSize = True
         Me.SoldierHideRockets.Location = New System.Drawing.Point(6, 19)
         Me.SoldierHideRockets.Name = "SoldierHideRockets"
@@ -861,9 +928,9 @@ Partial Class Form2
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel4.Controls.Add(Me.GroupBox10, 2, 0)
-        Me.TableLayoutPanel4.Controls.Add(Me.GroupBox11, 1, 0)
-        Me.TableLayoutPanel4.Controls.Add(Me.GroupBox12, 0, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.GroupBoxDemoMelee, 2, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.GroupBoxDemoSecondary, 1, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.GroupBoxDemoPrimary, 0, 0)
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(6, 6)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 1
@@ -871,23 +938,25 @@ Partial Class Form2
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(581, 163)
         Me.TableLayoutPanel4.TabIndex = 2
         '
-        'GroupBox10
+        'GroupBoxDemoMelee
         '
-        Me.GroupBox10.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxDemoMelee.AccessibleName = "GroupBoxDemoMelee"
+        Me.GroupBoxDemoMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox10.AutoSize = True
-        Me.GroupBox10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox10.Controls.Add(Me.DemomanHideMelee)
-        Me.GroupBox10.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(189, 157)
-        Me.GroupBox10.TabIndex = 1
-        Me.GroupBox10.TabStop = False
-        Me.GroupBox10.Text = "Melee"
+        Me.GroupBoxDemoMelee.AutoSize = True
+        Me.GroupBoxDemoMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxDemoMelee.Controls.Add(Me.DemomanHideMelee)
+        Me.GroupBoxDemoMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxDemoMelee.Name = "GroupBoxDemoMelee"
+        Me.GroupBoxDemoMelee.Size = New System.Drawing.Size(189, 157)
+        Me.GroupBoxDemoMelee.TabIndex = 1
+        Me.GroupBoxDemoMelee.TabStop = False
+        Me.GroupBoxDemoMelee.Text = "Melee"
         '
         'DemomanHideMelee
         '
+        Me.DemomanHideMelee.AccessibleName = "DemomanHideMelee"
         Me.DemomanHideMelee.AutoSize = True
         Me.DemomanHideMelee.Location = New System.Drawing.Point(6, 19)
         Me.DemomanHideMelee.Name = "DemomanHideMelee"
@@ -896,24 +965,26 @@ Partial Class Form2
         Me.DemomanHideMelee.Text = "Hide Melee"
         Me.DemomanHideMelee.UseVisualStyleBackColor = True
         '
-        'GroupBox11
+        'GroupBoxDemoSecondary
         '
-        Me.GroupBox11.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxDemoSecondary.AccessibleName = "GroupBoxDemoSecondary"
+        Me.GroupBoxDemoSecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox11.AutoSize = True
-        Me.GroupBox11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox11.Controls.Add(Me.DemomanHideStickybombs)
-        Me.GroupBox11.Controls.Add(Me.DemomanHideSecondaryInspect)
-        Me.GroupBox11.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox11.TabIndex = 1
-        Me.GroupBox11.TabStop = False
-        Me.GroupBox11.Text = "Secondary"
+        Me.GroupBoxDemoSecondary.AutoSize = True
+        Me.GroupBoxDemoSecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxDemoSecondary.Controls.Add(Me.DemomanHideStickybombs)
+        Me.GroupBoxDemoSecondary.Controls.Add(Me.DemomanHideSecondaryInspect)
+        Me.GroupBoxDemoSecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxDemoSecondary.Name = "GroupBoxDemoSecondary"
+        Me.GroupBoxDemoSecondary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxDemoSecondary.TabIndex = 1
+        Me.GroupBoxDemoSecondary.TabStop = False
+        Me.GroupBoxDemoSecondary.Text = "Secondary"
         '
         'DemomanHideStickybombs
         '
+        Me.DemomanHideStickybombs.AccessibleName = "DemomanHideStickybombs"
         Me.DemomanHideStickybombs.AutoSize = True
         Me.DemomanHideStickybombs.Location = New System.Drawing.Point(6, 19)
         Me.DemomanHideStickybombs.Name = "DemomanHideStickybombs"
@@ -925,6 +996,7 @@ Partial Class Form2
         '
         'DemomanHideSecondaryInspect
         '
+        Me.DemomanHideSecondaryInspect.AccessibleName = "DemomanHideSecondaryInspect"
         Me.DemomanHideSecondaryInspect.AutoSize = True
         Me.DemomanHideSecondaryInspect.Location = New System.Drawing.Point(6, 42)
         Me.DemomanHideSecondaryInspect.Name = "DemomanHideSecondaryInspect"
@@ -933,24 +1005,26 @@ Partial Class Form2
         Me.DemomanHideSecondaryInspect.Text = "Hide Secondary Inspects"
         Me.DemomanHideSecondaryInspect.UseVisualStyleBackColor = True
         '
-        'GroupBox12
+        'GroupBoxDemoPrimary
         '
-        Me.GroupBox12.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxDemoPrimary.AccessibleName = "GroupBoxDemoPrimary"
+        Me.GroupBoxDemoPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox12.AutoSize = True
-        Me.GroupBox12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox12.Controls.Add(Me.DemomanHidePrimaryInspect)
-        Me.GroupBox12.Controls.Add(Me.DemomanHideGrenades)
-        Me.GroupBox12.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox12.TabIndex = 0
-        Me.GroupBox12.TabStop = False
-        Me.GroupBox12.Text = "Primary"
+        Me.GroupBoxDemoPrimary.AutoSize = True
+        Me.GroupBoxDemoPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxDemoPrimary.Controls.Add(Me.DemomanHidePrimaryInspect)
+        Me.GroupBoxDemoPrimary.Controls.Add(Me.DemomanHideGrenades)
+        Me.GroupBoxDemoPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxDemoPrimary.Name = "GroupBoxDemoPrimary"
+        Me.GroupBoxDemoPrimary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxDemoPrimary.TabIndex = 0
+        Me.GroupBoxDemoPrimary.TabStop = False
+        Me.GroupBoxDemoPrimary.Text = "Primary"
         '
         'DemomanHidePrimaryInspect
         '
+        Me.DemomanHidePrimaryInspect.AccessibleName = "DemomanHidePrimaryInspect"
         Me.DemomanHidePrimaryInspect.AutoSize = True
         Me.DemomanHidePrimaryInspect.Location = New System.Drawing.Point(6, 42)
         Me.DemomanHidePrimaryInspect.Name = "DemomanHidePrimaryInspect"
@@ -961,6 +1035,7 @@ Partial Class Form2
         '
         'DemomanHideGrenades
         '
+        Me.DemomanHideGrenades.AccessibleName = "DemomanHideGrenades"
         Me.DemomanHideGrenades.AutoSize = True
         Me.DemomanHideGrenades.Location = New System.Drawing.Point(6, 19)
         Me.DemomanHideGrenades.Name = "DemomanHideGrenades"
@@ -990,9 +1065,9 @@ Partial Class Form2
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel5.Controls.Add(Me.GroupBox13, 2, 0)
-        Me.TableLayoutPanel5.Controls.Add(Me.GroupBox14, 1, 0)
-        Me.TableLayoutPanel5.Controls.Add(Me.GroupBox15, 0, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.GroupBoxMedicMelee, 2, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.GroupBoxMedicSecondary, 1, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.GroupBoxMedicPrimary, 0, 0)
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(6, 6)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 1
@@ -1000,23 +1075,25 @@ Partial Class Form2
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(581, 163)
         Me.TableLayoutPanel5.TabIndex = 2
         '
-        'GroupBox13
+        'GroupBoxMedicMelee
         '
-        Me.GroupBox13.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxMedicMelee.AccessibleName = "GroupBoxMedicMelee"
+        Me.GroupBoxMedicMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox13.AutoSize = True
-        Me.GroupBox13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox13.Controls.Add(Me.MedicHideMelee)
-        Me.GroupBox13.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox13.Name = "GroupBox13"
-        Me.GroupBox13.Size = New System.Drawing.Size(189, 157)
-        Me.GroupBox13.TabIndex = 1
-        Me.GroupBox13.TabStop = False
-        Me.GroupBox13.Text = "Melee"
+        Me.GroupBoxMedicMelee.AutoSize = True
+        Me.GroupBoxMedicMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxMedicMelee.Controls.Add(Me.MedicHideMelee)
+        Me.GroupBoxMedicMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxMedicMelee.Name = "GroupBoxMedicMelee"
+        Me.GroupBoxMedicMelee.Size = New System.Drawing.Size(189, 157)
+        Me.GroupBoxMedicMelee.TabIndex = 1
+        Me.GroupBoxMedicMelee.TabStop = False
+        Me.GroupBoxMedicMelee.Text = "Melee"
         '
         'MedicHideMelee
         '
+        Me.MedicHideMelee.AccessibleName = "MedicHideMelee"
         Me.MedicHideMelee.AutoSize = True
         Me.MedicHideMelee.Location = New System.Drawing.Point(6, 19)
         Me.MedicHideMelee.Name = "MedicHideMelee"
@@ -1025,24 +1102,26 @@ Partial Class Form2
         Me.MedicHideMelee.Text = "Hide Melee"
         Me.MedicHideMelee.UseVisualStyleBackColor = True
         '
-        'GroupBox14
+        'GroupBoxMedicSecondary
         '
-        Me.GroupBox14.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxMedicSecondary.AccessibleName = "GroupBoxMedicSecondary"
+        Me.GroupBoxMedicSecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox14.AutoSize = True
-        Me.GroupBox14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox14.Controls.Add(Me.MedicHideMediguns)
-        Me.GroupBox14.Controls.Add(Me.MedicHideSecondaryInspect)
-        Me.GroupBox14.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox14.Name = "GroupBox14"
-        Me.GroupBox14.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox14.TabIndex = 1
-        Me.GroupBox14.TabStop = False
-        Me.GroupBox14.Text = "Secondary"
+        Me.GroupBoxMedicSecondary.AutoSize = True
+        Me.GroupBoxMedicSecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxMedicSecondary.Controls.Add(Me.MedicHideMediguns)
+        Me.GroupBoxMedicSecondary.Controls.Add(Me.MedicHideSecondaryInspect)
+        Me.GroupBoxMedicSecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxMedicSecondary.Name = "GroupBoxMedicSecondary"
+        Me.GroupBoxMedicSecondary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxMedicSecondary.TabIndex = 1
+        Me.GroupBoxMedicSecondary.TabStop = False
+        Me.GroupBoxMedicSecondary.Text = "Secondary"
         '
         'MedicHideMediguns
         '
+        Me.MedicHideMediguns.AccessibleName = "MedicHideMediguns"
         Me.MedicHideMediguns.AutoSize = True
         Me.MedicHideMediguns.Location = New System.Drawing.Point(6, 19)
         Me.MedicHideMediguns.Name = "MedicHideMediguns"
@@ -1054,6 +1133,7 @@ Partial Class Form2
         '
         'MedicHideSecondaryInspect
         '
+        Me.MedicHideSecondaryInspect.AccessibleName = "MedicHideSecondaryInspect"
         Me.MedicHideSecondaryInspect.AutoSize = True
         Me.MedicHideSecondaryInspect.Location = New System.Drawing.Point(6, 42)
         Me.MedicHideSecondaryInspect.Name = "MedicHideSecondaryInspect"
@@ -1062,24 +1142,26 @@ Partial Class Form2
         Me.MedicHideSecondaryInspect.Text = "Hide Secondary Inspects"
         Me.MedicHideSecondaryInspect.UseVisualStyleBackColor = True
         '
-        'GroupBox15
+        'GroupBoxMedicPrimary
         '
-        Me.GroupBox15.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxMedicPrimary.AccessibleName = "GroupBoxMedicPrimary"
+        Me.GroupBoxMedicPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox15.AutoSize = True
-        Me.GroupBox15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox15.Controls.Add(Me.MedicHidePrimaryInspect)
-        Me.GroupBox15.Controls.Add(Me.MedicHidePrimaries)
-        Me.GroupBox15.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox15.Name = "GroupBox15"
-        Me.GroupBox15.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox15.TabIndex = 0
-        Me.GroupBox15.TabStop = False
-        Me.GroupBox15.Text = "Primary"
+        Me.GroupBoxMedicPrimary.AutoSize = True
+        Me.GroupBoxMedicPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxMedicPrimary.Controls.Add(Me.MedicHidePrimaryInspect)
+        Me.GroupBoxMedicPrimary.Controls.Add(Me.MedicHidePrimaries)
+        Me.GroupBoxMedicPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxMedicPrimary.Name = "GroupBoxMedicPrimary"
+        Me.GroupBoxMedicPrimary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxMedicPrimary.TabIndex = 0
+        Me.GroupBoxMedicPrimary.TabStop = False
+        Me.GroupBoxMedicPrimary.Text = "Primary"
         '
         'MedicHidePrimaryInspect
         '
+        Me.MedicHidePrimaryInspect.AccessibleName = "MedicHidePrimaryInspect"
         Me.MedicHidePrimaryInspect.AutoSize = True
         Me.MedicHidePrimaryInspect.Location = New System.Drawing.Point(6, 42)
         Me.MedicHidePrimaryInspect.Name = "MedicHidePrimaryInspect"
@@ -1091,6 +1173,7 @@ Partial Class Form2
         '
         'MedicHidePrimaries
         '
+        Me.MedicHidePrimaries.AccessibleName = "MedicHidePrimaries"
         Me.MedicHidePrimaries.AutoSize = True
         Me.MedicHidePrimaries.Location = New System.Drawing.Point(6, 19)
         Me.MedicHidePrimaries.Name = "MedicHidePrimaries"
@@ -1120,9 +1203,9 @@ Partial Class Form2
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel6.Controls.Add(Me.GroupBox16, 2, 0)
-        Me.TableLayoutPanel6.Controls.Add(Me.GroupBox17, 1, 0)
-        Me.TableLayoutPanel6.Controls.Add(Me.GroupBox18, 0, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.GroupBoxHeavyMelee, 2, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.GroupBoxHeavySecondary, 1, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.GroupBoxHeavyPrimary, 0, 0)
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(6, 6)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
@@ -1130,23 +1213,25 @@ Partial Class Form2
         Me.TableLayoutPanel6.Size = New System.Drawing.Size(581, 163)
         Me.TableLayoutPanel6.TabIndex = 2
         '
-        'GroupBox16
+        'GroupBoxHeavyMelee
         '
-        Me.GroupBox16.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxHeavyMelee.AccessibleName = "GroupBoxHeavyMelee"
+        Me.GroupBoxHeavyMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox16.AutoSize = True
-        Me.GroupBox16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox16.Controls.Add(Me.HeavyHideMelee)
-        Me.GroupBox16.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox16.Name = "GroupBox16"
-        Me.GroupBox16.Size = New System.Drawing.Size(189, 157)
-        Me.GroupBox16.TabIndex = 1
-        Me.GroupBox16.TabStop = False
-        Me.GroupBox16.Text = "Melee"
+        Me.GroupBoxHeavyMelee.AutoSize = True
+        Me.GroupBoxHeavyMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxHeavyMelee.Controls.Add(Me.HeavyHideMelee)
+        Me.GroupBoxHeavyMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxHeavyMelee.Name = "GroupBoxHeavyMelee"
+        Me.GroupBoxHeavyMelee.Size = New System.Drawing.Size(189, 157)
+        Me.GroupBoxHeavyMelee.TabIndex = 1
+        Me.GroupBoxHeavyMelee.TabStop = False
+        Me.GroupBoxHeavyMelee.Text = "Melee"
         '
         'HeavyHideMelee
         '
+        Me.HeavyHideMelee.AccessibleName = "HeavyHideMelee"
         Me.HeavyHideMelee.AutoSize = True
         Me.HeavyHideMelee.Location = New System.Drawing.Point(6, 19)
         Me.HeavyHideMelee.Name = "HeavyHideMelee"
@@ -1155,25 +1240,27 @@ Partial Class Form2
         Me.HeavyHideMelee.Text = "Hide Melee"
         Me.HeavyHideMelee.UseVisualStyleBackColor = True
         '
-        'GroupBox17
+        'GroupBoxHeavySecondary
         '
-        Me.GroupBox17.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxHeavySecondary.AccessibleName = "GroupBoxHeavySecondary"
+        Me.GroupBoxHeavySecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox17.AutoSize = True
-        Me.GroupBox17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox17.Controls.Add(Me.HeavyHideShotguns)
-        Me.GroupBox17.Controls.Add(Me.HeavyHideConsumables)
-        Me.GroupBox17.Controls.Add(Me.HeavyHideSecondaryInspect)
-        Me.GroupBox17.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox17.Name = "GroupBox17"
-        Me.GroupBox17.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox17.TabIndex = 1
-        Me.GroupBox17.TabStop = False
-        Me.GroupBox17.Text = "Secondary"
+        Me.GroupBoxHeavySecondary.AutoSize = True
+        Me.GroupBoxHeavySecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxHeavySecondary.Controls.Add(Me.HeavyHideShotguns)
+        Me.GroupBoxHeavySecondary.Controls.Add(Me.HeavyHideConsumables)
+        Me.GroupBoxHeavySecondary.Controls.Add(Me.HeavyHideSecondaryInspect)
+        Me.GroupBoxHeavySecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxHeavySecondary.Name = "GroupBoxHeavySecondary"
+        Me.GroupBoxHeavySecondary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxHeavySecondary.TabIndex = 1
+        Me.GroupBoxHeavySecondary.TabStop = False
+        Me.GroupBoxHeavySecondary.Text = "Secondary"
         '
         'HeavyHideShotguns
         '
+        Me.HeavyHideShotguns.AccessibleName = "HeavyHideShotguns"
         Me.HeavyHideShotguns.AutoSize = True
         Me.HeavyHideShotguns.Location = New System.Drawing.Point(6, 19)
         Me.HeavyHideShotguns.Name = "HeavyHideShotguns"
@@ -1185,6 +1272,7 @@ Partial Class Form2
         '
         'HeavyHideConsumables
         '
+        Me.HeavyHideConsumables.AccessibleName = "HeavyHideConsumables"
         Me.HeavyHideConsumables.AutoSize = True
         Me.HeavyHideConsumables.Location = New System.Drawing.Point(6, 42)
         Me.HeavyHideConsumables.Name = "HeavyHideConsumables"
@@ -1197,6 +1285,7 @@ Partial Class Form2
         '
         'HeavyHideSecondaryInspect
         '
+        Me.HeavyHideSecondaryInspect.AccessibleName = "HeavyHideSecondaryInspect"
         Me.HeavyHideSecondaryInspect.AutoSize = True
         Me.HeavyHideSecondaryInspect.Location = New System.Drawing.Point(6, 65)
         Me.HeavyHideSecondaryInspect.Name = "HeavyHideSecondaryInspect"
@@ -1205,24 +1294,26 @@ Partial Class Form2
         Me.HeavyHideSecondaryInspect.Text = "Hide Secondary Inspects"
         Me.HeavyHideSecondaryInspect.UseVisualStyleBackColor = True
         '
-        'GroupBox18
+        'GroupBoxHeavyPrimary
         '
-        Me.GroupBox18.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxHeavyPrimary.AccessibleName = "GroupBoxHeavyPrimary"
+        Me.GroupBoxHeavyPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox18.AutoSize = True
-        Me.GroupBox18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox18.Controls.Add(Me.HeavyHidePrimaryInspect)
-        Me.GroupBox18.Controls.Add(Me.HeavyHideMiniguns)
-        Me.GroupBox18.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox18.Name = "GroupBox18"
-        Me.GroupBox18.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox18.TabIndex = 0
-        Me.GroupBox18.TabStop = False
-        Me.GroupBox18.Text = "Primary"
+        Me.GroupBoxHeavyPrimary.AutoSize = True
+        Me.GroupBoxHeavyPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxHeavyPrimary.Controls.Add(Me.HeavyHidePrimaryInspect)
+        Me.GroupBoxHeavyPrimary.Controls.Add(Me.HeavyHideMiniguns)
+        Me.GroupBoxHeavyPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxHeavyPrimary.Name = "GroupBoxHeavyPrimary"
+        Me.GroupBoxHeavyPrimary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxHeavyPrimary.TabIndex = 0
+        Me.GroupBoxHeavyPrimary.TabStop = False
+        Me.GroupBoxHeavyPrimary.Text = "Primary"
         '
         'HeavyHidePrimaryInspect
         '
+        Me.HeavyHidePrimaryInspect.AccessibleName = "HeavyHidePrimaryInspect"
         Me.HeavyHidePrimaryInspect.AutoSize = True
         Me.HeavyHidePrimaryInspect.Location = New System.Drawing.Point(6, 42)
         Me.HeavyHidePrimaryInspect.Name = "HeavyHidePrimaryInspect"
@@ -1233,6 +1324,7 @@ Partial Class Form2
         '
         'HeavyHideMiniguns
         '
+        Me.HeavyHideMiniguns.AccessibleName = "HeavyHideMiniguns"
         Me.HeavyHideMiniguns.AutoSize = True
         Me.HeavyHideMiniguns.Location = New System.Drawing.Point(6, 19)
         Me.HeavyHideMiniguns.Name = "HeavyHideMiniguns"
@@ -1262,9 +1354,9 @@ Partial Class Form2
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel7.Controls.Add(Me.GroupBox19, 2, 0)
-        Me.TableLayoutPanel7.Controls.Add(Me.GroupBox20, 1, 0)
-        Me.TableLayoutPanel7.Controls.Add(Me.GroupBox21, 0, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.GroupBoxPyroMelee, 2, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.GroupBoxPyroSecondary, 1, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.GroupBoxPyroPrimary, 0, 0)
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(6, 6)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 1
@@ -1272,23 +1364,25 @@ Partial Class Form2
         Me.TableLayoutPanel7.Size = New System.Drawing.Size(581, 163)
         Me.TableLayoutPanel7.TabIndex = 2
         '
-        'GroupBox19
+        'GroupBoxPyroMelee
         '
-        Me.GroupBox19.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxPyroMelee.AccessibleName = "GroupBoxPyroMelee"
+        Me.GroupBoxPyroMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox19.AutoSize = True
-        Me.GroupBox19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox19.Controls.Add(Me.PyroHideMelee)
-        Me.GroupBox19.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox19.Name = "GroupBox19"
-        Me.GroupBox19.Size = New System.Drawing.Size(189, 157)
-        Me.GroupBox19.TabIndex = 1
-        Me.GroupBox19.TabStop = False
-        Me.GroupBox19.Text = "Melee"
+        Me.GroupBoxPyroMelee.AutoSize = True
+        Me.GroupBoxPyroMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxPyroMelee.Controls.Add(Me.PyroHideMelee)
+        Me.GroupBoxPyroMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxPyroMelee.Name = "GroupBoxPyroMelee"
+        Me.GroupBoxPyroMelee.Size = New System.Drawing.Size(189, 157)
+        Me.GroupBoxPyroMelee.TabIndex = 1
+        Me.GroupBoxPyroMelee.TabStop = False
+        Me.GroupBoxPyroMelee.Text = "Melee"
         '
         'PyroHideMelee
         '
+        Me.PyroHideMelee.AccessibleName = "PyroHideMelee"
         Me.PyroHideMelee.AutoSize = True
         Me.PyroHideMelee.Location = New System.Drawing.Point(6, 19)
         Me.PyroHideMelee.Name = "PyroHideMelee"
@@ -1297,27 +1391,29 @@ Partial Class Form2
         Me.PyroHideMelee.Text = "Hide Melee"
         Me.PyroHideMelee.UseVisualStyleBackColor = True
         '
-        'GroupBox20
+        'GroupBoxPyroSecondary
         '
-        Me.GroupBox20.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxPyroSecondary.AccessibleName = "GroupBoxPyroSecondary"
+        Me.GroupBoxPyroSecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox20.AutoSize = True
-        Me.GroupBox20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox20.Controls.Add(Me.PyroHideShotguns)
-        Me.GroupBox20.Controls.Add(Me.PyroHideFlareGuns)
-        Me.GroupBox20.Controls.Add(Me.PyroHideThermalThruster)
-        Me.GroupBox20.Controls.Add(Me.PyroHideGasPasser)
-        Me.GroupBox20.Controls.Add(Me.PyroHideSecondaryInspect)
-        Me.GroupBox20.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox20.Name = "GroupBox20"
-        Me.GroupBox20.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox20.TabIndex = 1
-        Me.GroupBox20.TabStop = False
-        Me.GroupBox20.Text = "Secondary"
+        Me.GroupBoxPyroSecondary.AutoSize = True
+        Me.GroupBoxPyroSecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxPyroSecondary.Controls.Add(Me.PyroHideShotguns)
+        Me.GroupBoxPyroSecondary.Controls.Add(Me.PyroHideFlareGuns)
+        Me.GroupBoxPyroSecondary.Controls.Add(Me.PyroHideThermalThruster)
+        Me.GroupBoxPyroSecondary.Controls.Add(Me.PyroHideGasPasser)
+        Me.GroupBoxPyroSecondary.Controls.Add(Me.PyroHideSecondaryInspect)
+        Me.GroupBoxPyroSecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxPyroSecondary.Name = "GroupBoxPyroSecondary"
+        Me.GroupBoxPyroSecondary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxPyroSecondary.TabIndex = 1
+        Me.GroupBoxPyroSecondary.TabStop = False
+        Me.GroupBoxPyroSecondary.Text = "Secondary"
         '
         'PyroHideShotguns
         '
+        Me.PyroHideShotguns.AccessibleName = "PyroHideShotguns"
         Me.PyroHideShotguns.AutoSize = True
         Me.PyroHideShotguns.Location = New System.Drawing.Point(6, 19)
         Me.PyroHideShotguns.Name = "PyroHideShotguns"
@@ -1329,6 +1425,7 @@ Partial Class Form2
         '
         'PyroHideFlareGuns
         '
+        Me.PyroHideFlareGuns.AccessibleName = "PyroHideFlareGuns"
         Me.PyroHideFlareGuns.AutoSize = True
         Me.PyroHideFlareGuns.Location = New System.Drawing.Point(6, 42)
         Me.PyroHideFlareGuns.Name = "PyroHideFlareGuns"
@@ -1341,10 +1438,11 @@ Partial Class Form2
         '
         'PyroHideThermalThruster
         '
+        Me.PyroHideThermalThruster.AccessibleName = "PyroHideThermalThruster"
         Me.PyroHideThermalThruster.AutoSize = True
         Me.PyroHideThermalThruster.Location = New System.Drawing.Point(6, 65)
         Me.PyroHideThermalThruster.Name = "PyroHideThermalThruster"
-        Me.PyroHideThermalThruster.Size = New System.Drawing.Size(108, 17)
+        Me.PyroHideThermalThruster.Size = New System.Drawing.Size(131, 17)
         Me.PyroHideThermalThruster.TabIndex = 6
         Me.PyroHideThermalThruster.Text = "Hide Thermal Thruster"
         Me.PyroHideThermalThruster.UseMnemonic = False
@@ -1352,10 +1450,11 @@ Partial Class Form2
         '
         'PyroHideGasPasser
         '
+        Me.PyroHideGasPasser.AccessibleName = "PyroHideGasPasser"
         Me.PyroHideGasPasser.AutoSize = True
         Me.PyroHideGasPasser.Location = New System.Drawing.Point(6, 88)
         Me.PyroHideGasPasser.Name = "PyroHideGasPasser"
-        Me.PyroHideGasPasser.Size = New System.Drawing.Size(114, 17)
+        Me.PyroHideGasPasser.Size = New System.Drawing.Size(105, 17)
         Me.PyroHideGasPasser.TabIndex = 6
         Me.PyroHideGasPasser.Text = "Hide Gas Passer"
         Me.PyroHideGasPasser.UseMnemonic = False
@@ -1363,6 +1462,7 @@ Partial Class Form2
         '
         'PyroHideSecondaryInspect
         '
+        Me.PyroHideSecondaryInspect.AccessibleName = "PyroHideSecondaryInspect"
         Me.PyroHideSecondaryInspect.AutoSize = True
         Me.PyroHideSecondaryInspect.Location = New System.Drawing.Point(6, 111)
         Me.PyroHideSecondaryInspect.Name = "PyroHideSecondaryInspect"
@@ -1371,38 +1471,41 @@ Partial Class Form2
         Me.PyroHideSecondaryInspect.Text = "Hide Secondary Inspects"
         Me.PyroHideSecondaryInspect.UseVisualStyleBackColor = True
         '
-        'GroupBox21
+        'GroupBoxPyroPrimary
         '
-        Me.GroupBox21.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxPyroPrimary.AccessibleName = "GroupBoxPyroPrimary"
+        Me.GroupBoxPyroPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox21.AutoSize = True
-        Me.GroupBox21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox21.Controls.Add(Me.PyroHidePrimaryInspect)
-        Me.GroupBox21.Controls.Add(Me.PyroHideFlamethrowers)
-        Me.GroupBox21.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox21.Name = "GroupBox21"
-        Me.GroupBox21.Size = New System.Drawing.Size(187, 157)
-        Me.GroupBox21.TabIndex = 0
-        Me.GroupBox21.TabStop = False
-        Me.GroupBox21.Text = "Primary"
+        Me.GroupBoxPyroPrimary.AutoSize = True
+        Me.GroupBoxPyroPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxPyroPrimary.Controls.Add(Me.PyroHidePrimaryInspect)
+        Me.GroupBoxPyroPrimary.Controls.Add(Me.PyroHideFlamethrowers)
+        Me.GroupBoxPyroPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxPyroPrimary.Name = "GroupBoxPyroPrimary"
+        Me.GroupBoxPyroPrimary.Size = New System.Drawing.Size(187, 157)
+        Me.GroupBoxPyroPrimary.TabIndex = 0
+        Me.GroupBoxPyroPrimary.TabStop = False
+        Me.GroupBoxPyroPrimary.Text = "Primary"
         '
         'PyroHidePrimaryInspect
         '
+        Me.PyroHidePrimaryInspect.AccessibleName = "PyroHidePrimaryInspect"
         Me.PyroHidePrimaryInspect.AutoSize = True
         Me.PyroHidePrimaryInspect.Location = New System.Drawing.Point(6, 42)
         Me.PyroHidePrimaryInspect.Name = "PyroHidePrimaryInspect"
-        Me.PyroHidePrimaryInspect.Size = New System.Drawing.Size(119, 17)
+        Me.PyroHidePrimaryInspect.Size = New System.Drawing.Size(128, 17)
         Me.PyroHidePrimaryInspect.TabIndex = 1
         Me.PyroHidePrimaryInspect.Text = "Hide Primary Inspects"
         Me.PyroHidePrimaryInspect.UseVisualStyleBackColor = True
         '
         'PyroHideFlamethrowers
         '
+        Me.PyroHideFlamethrowers.AccessibleName = "PyroHideFlamethrowers"
         Me.PyroHideFlamethrowers.AutoSize = True
         Me.PyroHideFlamethrowers.Location = New System.Drawing.Point(6, 19)
         Me.PyroHideFlamethrowers.Name = "PyroHideFlamethrowers"
-        Me.PyroHideFlamethrowers.Size = New System.Drawing.Size(110, 17)
+        Me.PyroHideFlamethrowers.Size = New System.Drawing.Size(119, 17)
         Me.PyroHideFlamethrowers.TabIndex = 0
         Me.PyroHideFlamethrowers.Text = "Hide Flamethrowers"
         Me.ViewmodelTooltip.SetToolTip(Me.PyroHideFlamethrowers, "Flame Thrower" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Backburner" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Degreaser" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Phlogistinator" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Dragon's Fury")
@@ -1427,7 +1530,7 @@ Partial Class Form2
         Me.TableLayoutPanel10.ColumnCount = 1
         Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel10.Controls.Add(Me.TableLayoutPanel8, 0, 0)
-        Me.TableLayoutPanel10.Controls.Add(Me.GroupBox28, 0, 1)
+        Me.TableLayoutPanel10.Controls.Add(Me.GroupBoxSpyPDA, 0, 1)
         Me.TableLayoutPanel10.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
         Me.TableLayoutPanel10.RowCount = 2
@@ -1445,9 +1548,9 @@ Partial Class Form2
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel8.Controls.Add(Me.GroupBox24, 0, 0)
-        Me.TableLayoutPanel8.Controls.Add(Me.GroupBox22, 2, 0)
-        Me.TableLayoutPanel8.Controls.Add(Me.GroupBox23, 1, 0)
+        Me.TableLayoutPanel8.Controls.Add(Me.GroupBoxSpyPrimary, 0, 0)
+        Me.TableLayoutPanel8.Controls.Add(Me.GroupBoxSpyMelee, 2, 0)
+        Me.TableLayoutPanel8.Controls.Add(Me.GroupBoxSpySecondary, 1, 0)
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 1
@@ -1455,24 +1558,26 @@ Partial Class Form2
         Me.TableLayoutPanel8.Size = New System.Drawing.Size(581, 70)
         Me.TableLayoutPanel8.TabIndex = 1
         '
-        'GroupBox24
+        'GroupBoxSpyPrimary
         '
-        Me.GroupBox24.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSpyPrimary.AccessibleName = "GroupBoxSpyPrimary"
+        Me.GroupBoxSpyPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox24.AutoSize = True
-        Me.GroupBox24.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox24.Controls.Add(Me.SpyHidePrimaryInspect)
-        Me.GroupBox24.Controls.Add(Me.SpyHideRevolvers)
-        Me.GroupBox24.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox24.Name = "GroupBox24"
-        Me.GroupBox24.Size = New System.Drawing.Size(187, 64)
-        Me.GroupBox24.TabIndex = 0
-        Me.GroupBox24.TabStop = False
-        Me.GroupBox24.Text = "Primary"
+        Me.GroupBoxSpyPrimary.AutoSize = True
+        Me.GroupBoxSpyPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSpyPrimary.Controls.Add(Me.SpyHidePrimaryInspect)
+        Me.GroupBoxSpyPrimary.Controls.Add(Me.SpyHideRevolvers)
+        Me.GroupBoxSpyPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxSpyPrimary.Name = "GroupBoxSpyPrimary"
+        Me.GroupBoxSpyPrimary.Size = New System.Drawing.Size(187, 64)
+        Me.GroupBoxSpyPrimary.TabIndex = 0
+        Me.GroupBoxSpyPrimary.TabStop = False
+        Me.GroupBoxSpyPrimary.Text = "Primary"
         '
         'SpyHidePrimaryInspect
         '
+        Me.SpyHidePrimaryInspect.AccessibleName = "SpyHidePrimaryInspect"
         Me.SpyHidePrimaryInspect.AutoSize = True
         Me.SpyHidePrimaryInspect.Location = New System.Drawing.Point(6, 42)
         Me.SpyHidePrimaryInspect.Name = "SpyHidePrimaryInspect"
@@ -1483,6 +1588,7 @@ Partial Class Form2
         '
         'SpyHideRevolvers
         '
+        Me.SpyHideRevolvers.AccessibleName = "SpyHideRevolvers"
         Me.SpyHideRevolvers.AutoSize = True
         Me.SpyHideRevolvers.Location = New System.Drawing.Point(6, 19)
         Me.SpyHideRevolvers.Name = "SpyHideRevolvers"
@@ -1492,24 +1598,26 @@ Partial Class Form2
         Me.ViewmodelTooltip.SetToolTip(Me.SpyHideRevolvers, "Revolver" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Ambassador" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "L'Etranger" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Enforcer" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Diamondback")
         Me.SpyHideRevolvers.UseVisualStyleBackColor = True
         '
-        'GroupBox22
+        'GroupBoxSpyMelee
         '
-        Me.GroupBox22.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSpyMelee.AccessibleName = "GroupBoxSpyMelee"
+        Me.GroupBoxSpyMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox22.AutoSize = True
-        Me.GroupBox22.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox22.Controls.Add(Me.SpyHideMeleeInspect)
-        Me.GroupBox22.Controls.Add(Me.SpyHideMelee)
-        Me.GroupBox22.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox22.Name = "GroupBox22"
-        Me.GroupBox22.Size = New System.Drawing.Size(189, 64)
-        Me.GroupBox22.TabIndex = 1
-        Me.GroupBox22.TabStop = False
-        Me.GroupBox22.Text = "Melee"
+        Me.GroupBoxSpyMelee.AutoSize = True
+        Me.GroupBoxSpyMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSpyMelee.Controls.Add(Me.SpyHideMeleeInspect)
+        Me.GroupBoxSpyMelee.Controls.Add(Me.SpyHideMelee)
+        Me.GroupBoxSpyMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxSpyMelee.Name = "GroupBoxSpyMelee"
+        Me.GroupBoxSpyMelee.Size = New System.Drawing.Size(189, 64)
+        Me.GroupBoxSpyMelee.TabIndex = 1
+        Me.GroupBoxSpyMelee.TabStop = False
+        Me.GroupBoxSpyMelee.Text = "Melee"
         '
         'SpyHideMeleeInspect
         '
+        Me.SpyHideMeleeInspect.AccessibleName = "SpyHideMeleeInspect"
         Me.SpyHideMeleeInspect.AutoSize = True
         Me.SpyHideMeleeInspect.Location = New System.Drawing.Point(6, 42)
         Me.SpyHideMeleeInspect.Name = "SpyHideMeleeInspect"
@@ -1520,6 +1628,7 @@ Partial Class Form2
         '
         'SpyHideMelee
         '
+        Me.SpyHideMelee.AccessibleName = "SpyHideMelee"
         Me.SpyHideMelee.AutoSize = True
         Me.SpyHideMelee.Location = New System.Drawing.Point(6, 19)
         Me.SpyHideMelee.Name = "SpyHideMelee"
@@ -1529,23 +1638,25 @@ Partial Class Form2
         Me.ViewmodelTooltip.SetToolTip(Me.SpyHideMelee, "Knife" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Your Eternal Reward" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Conniver's Kunai" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Big Earner" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Spy-cicle")
         Me.SpyHideMelee.UseVisualStyleBackColor = True
         '
-        'GroupBox23
+        'GroupBoxSpySecondary
         '
-        Me.GroupBox23.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSpySecondary.AccessibleName = "GroupBoxSpySecondary"
+        Me.GroupBoxSpySecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox23.AutoSize = True
-        Me.GroupBox23.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox23.Controls.Add(Me.SpyHideSappers)
-        Me.GroupBox23.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox23.Name = "GroupBox23"
-        Me.GroupBox23.Size = New System.Drawing.Size(187, 64)
-        Me.GroupBox23.TabIndex = 1
-        Me.GroupBox23.TabStop = False
-        Me.GroupBox23.Text = "Secondary"
+        Me.GroupBoxSpySecondary.AutoSize = True
+        Me.GroupBoxSpySecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxSpySecondary.Controls.Add(Me.SpyHideSappers)
+        Me.GroupBoxSpySecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxSpySecondary.Name = "GroupBoxSpySecondary"
+        Me.GroupBoxSpySecondary.Size = New System.Drawing.Size(187, 64)
+        Me.GroupBoxSpySecondary.TabIndex = 1
+        Me.GroupBoxSpySecondary.TabStop = False
+        Me.GroupBoxSpySecondary.Text = "Secondary"
         '
         'SpyHideSappers
         '
+        Me.SpyHideSappers.AccessibleName = "SpyHideSappers"
         Me.SpyHideSappers.AutoSize = True
         Me.SpyHideSappers.Location = New System.Drawing.Point(6, 19)
         Me.SpyHideSappers.Name = "SpyHideSappers"
@@ -1555,22 +1666,38 @@ Partial Class Form2
         Me.ViewmodelTooltip.SetToolTip(Me.SpyHideSappers, "Sapper" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Red-Tape Recorder")
         Me.SpyHideSappers.UseVisualStyleBackColor = True
         '
-        'GroupBox28
+        'GroupBoxSpyPDA
         '
-        Me.GroupBox28.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxSpyPDA.AccessibleName = "GroupBoxSpyPDA"
+        Me.GroupBoxSpyPDA.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox28.AutoSize = True
-        Me.GroupBox28.Controls.Add(Me.Button2)
-        Me.GroupBox28.Controls.Add(Me.SpyHideDisguiseKit)
-        Me.GroupBox28.Controls.Add(Me.SpyHideDeadRinger)
-        Me.GroupBox28.Controls.Add(Me.SpyHideInvisWatch)
-        Me.GroupBox28.Location = New System.Drawing.Point(3, 79)
-        Me.GroupBox28.Name = "GroupBox28"
-        Me.GroupBox28.Size = New System.Drawing.Size(581, 87)
-        Me.GroupBox28.TabIndex = 2
-        Me.GroupBox28.TabStop = False
-        Me.GroupBox28.Text = "PDA"
+        Me.GroupBoxSpyPDA.AutoSize = True
+        Me.GroupBoxSpyPDA.Controls.Add(Me.Button2)
+        Me.GroupBoxSpyPDA.Controls.Add(Me.SpyHideDisguiseKit)
+        Me.GroupBoxSpyPDA.Controls.Add(Me.SpyHideDeadRinger)
+        Me.GroupBoxSpyPDA.Controls.Add(Me.SpyHideInvisWatch)
+        Me.GroupBoxSpyPDA.Location = New System.Drawing.Point(3, 79)
+        Me.GroupBoxSpyPDA.Name = "GroupBoxSpyPDA"
+        Me.GroupBoxSpyPDA.Size = New System.Drawing.Size(581, 87)
+        Me.GroupBoxSpyPDA.TabIndex = 2
+        Me.GroupBoxSpyPDA.TabStop = False
+        Me.GroupBoxSpyPDA.Text = "PDA"
+        '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(134, 12)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(94, 78)
+        Me.Button2.TabIndex = 15
+        Me.Button2.Text = "?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "?"
+        Me.ViewmodelTooltip.SetToolTip(Me.Button2, "Due to the complexity of the Spy's animation files, these are always shown." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "In a" &
+        " future release, these might become hideable.")
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'SpyHideDisguiseKit
         '
@@ -1625,7 +1752,7 @@ Partial Class Form2
         Me.TableLayoutPanel9.ColumnCount = 1
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel9.Controls.Add(Me.TableLayoutPanel11, 0, 0)
-        Me.TableLayoutPanel9.Controls.Add(Me.GroupBox29, 0, 1)
+        Me.TableLayoutPanel9.Controls.Add(Me.GroupBoxEngineerPDA, 0, 1)
         Me.TableLayoutPanel9.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
         Me.TableLayoutPanel9.RowCount = 2
@@ -1643,9 +1770,9 @@ Partial Class Form2
         Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel11.Controls.Add(Me.GroupBox25, 0, 0)
-        Me.TableLayoutPanel11.Controls.Add(Me.GroupBox26, 2, 0)
-        Me.TableLayoutPanel11.Controls.Add(Me.GroupBox27, 1, 0)
+        Me.TableLayoutPanel11.Controls.Add(Me.GroupBoxEngineerPrimary, 0, 0)
+        Me.TableLayoutPanel11.Controls.Add(Me.GroupBoxEngineerMelee, 2, 0)
+        Me.TableLayoutPanel11.Controls.Add(Me.GroupBoxEngineerSecondary, 1, 0)
         Me.TableLayoutPanel11.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel11.Name = "TableLayoutPanel11"
         Me.TableLayoutPanel11.RowCount = 1
@@ -1653,25 +1780,27 @@ Partial Class Form2
         Me.TableLayoutPanel11.Size = New System.Drawing.Size(581, 93)
         Me.TableLayoutPanel11.TabIndex = 1
         '
-        'GroupBox25
+        'GroupBoxEngineerPrimary
         '
-        Me.GroupBox25.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxEngineerPrimary.AccessibleName = "GroupBoxEngineerPrimary"
+        Me.GroupBoxEngineerPrimary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox25.AutoSize = True
-        Me.GroupBox25.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox25.Controls.Add(Me.EngineerHidePomson)
-        Me.GroupBox25.Controls.Add(Me.EngineerHidePrimaryInspect)
-        Me.GroupBox25.Controls.Add(Me.EngineerHideShotguns)
-        Me.GroupBox25.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox25.Name = "GroupBox25"
-        Me.GroupBox25.Size = New System.Drawing.Size(187, 87)
-        Me.GroupBox25.TabIndex = 0
-        Me.GroupBox25.TabStop = False
-        Me.GroupBox25.Text = "Primary"
+        Me.GroupBoxEngineerPrimary.AutoSize = True
+        Me.GroupBoxEngineerPrimary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxEngineerPrimary.Controls.Add(Me.EngineerHidePomson)
+        Me.GroupBoxEngineerPrimary.Controls.Add(Me.EngineerHidePrimaryInspect)
+        Me.GroupBoxEngineerPrimary.Controls.Add(Me.EngineerHideShotguns)
+        Me.GroupBoxEngineerPrimary.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBoxEngineerPrimary.Name = "GroupBoxEngineerPrimary"
+        Me.GroupBoxEngineerPrimary.Size = New System.Drawing.Size(187, 87)
+        Me.GroupBoxEngineerPrimary.TabIndex = 0
+        Me.GroupBoxEngineerPrimary.TabStop = False
+        Me.GroupBoxEngineerPrimary.Text = "Primary"
         '
         'EngineerHidePomson
         '
+        Me.EngineerHidePomson.AccessibleName = "EngineerHidePomson"
         Me.EngineerHidePomson.AutoSize = True
         Me.EngineerHidePomson.Location = New System.Drawing.Point(6, 42)
         Me.EngineerHidePomson.Name = "EngineerHidePomson"
@@ -1684,6 +1813,7 @@ Partial Class Form2
         '
         'EngineerHidePrimaryInspect
         '
+        Me.EngineerHidePrimaryInspect.AccessibleName = "EngineerHidePrimaryInspect"
         Me.EngineerHidePrimaryInspect.AutoSize = True
         Me.EngineerHidePrimaryInspect.Location = New System.Drawing.Point(6, 65)
         Me.EngineerHidePrimaryInspect.Name = "EngineerHidePrimaryInspect"
@@ -1694,6 +1824,7 @@ Partial Class Form2
         '
         'EngineerHideShotguns
         '
+        Me.EngineerHideShotguns.AccessibleName = "EngineerHideShotguns"
         Me.EngineerHideShotguns.AutoSize = True
         Me.EngineerHideShotguns.Location = New System.Drawing.Point(6, 19)
         Me.EngineerHideShotguns.Name = "EngineerHideShotguns"
@@ -1703,25 +1834,27 @@ Partial Class Form2
         Me.ViewmodelTooltip.SetToolTip(Me.EngineerHideShotguns, "Shotgun" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Frontier Justice" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Widowmaker" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Rescue Ranger" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Panic Attack")
         Me.EngineerHideShotguns.UseVisualStyleBackColor = True
         '
-        'GroupBox26
+        'GroupBoxEngineerMelee
         '
-        Me.GroupBox26.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxEngineerMelee.AccessibleName = "GroupBoxEngineerMelee"
+        Me.GroupBoxEngineerMelee.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox26.AutoSize = True
-        Me.GroupBox26.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox26.Controls.Add(Me.EngineerHideGunslinger)
-        Me.GroupBox26.Controls.Add(Me.EngineerHideMeleeInspect)
-        Me.GroupBox26.Controls.Add(Me.EngineerHideWrenches)
-        Me.GroupBox26.Location = New System.Drawing.Point(389, 3)
-        Me.GroupBox26.Name = "GroupBox26"
-        Me.GroupBox26.Size = New System.Drawing.Size(189, 87)
-        Me.GroupBox26.TabIndex = 1
-        Me.GroupBox26.TabStop = False
-        Me.GroupBox26.Text = "Melee"
+        Me.GroupBoxEngineerMelee.AutoSize = True
+        Me.GroupBoxEngineerMelee.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxEngineerMelee.Controls.Add(Me.EngineerHideGunslinger)
+        Me.GroupBoxEngineerMelee.Controls.Add(Me.EngineerHideMeleeInspect)
+        Me.GroupBoxEngineerMelee.Controls.Add(Me.EngineerHideWrenches)
+        Me.GroupBoxEngineerMelee.Location = New System.Drawing.Point(389, 3)
+        Me.GroupBoxEngineerMelee.Name = "GroupBoxEngineerMelee"
+        Me.GroupBoxEngineerMelee.Size = New System.Drawing.Size(189, 87)
+        Me.GroupBoxEngineerMelee.TabIndex = 1
+        Me.GroupBoxEngineerMelee.TabStop = False
+        Me.GroupBoxEngineerMelee.Text = "Melee"
         '
         'EngineerHideGunslinger
         '
+        Me.EngineerHideGunslinger.AccessibleName = "EngineerHideGunslinger"
         Me.EngineerHideGunslinger.AutoSize = True
         Me.EngineerHideGunslinger.Location = New System.Drawing.Point(6, 42)
         Me.EngineerHideGunslinger.Name = "EngineerHideGunslinger"
@@ -1732,6 +1865,7 @@ Partial Class Form2
         '
         'EngineerHideMeleeInspect
         '
+        Me.EngineerHideMeleeInspect.AccessibleName = "EngineerHideMeleeInspect"
         Me.EngineerHideMeleeInspect.AutoSize = True
         Me.EngineerHideMeleeInspect.Location = New System.Drawing.Point(6, 65)
         Me.EngineerHideMeleeInspect.Name = "EngineerHideMeleeInspect"
@@ -1742,6 +1876,7 @@ Partial Class Form2
         '
         'EngineerHideWrenches
         '
+        Me.EngineerHideWrenches.AccessibleName = "EngineerHideWrenches"
         Me.EngineerHideWrenches.AutoSize = True
         Me.EngineerHideWrenches.Location = New System.Drawing.Point(6, 19)
         Me.EngineerHideWrenches.Name = "EngineerHideWrenches"
@@ -1751,23 +1886,24 @@ Partial Class Form2
         Me.ViewmodelTooltip.SetToolTip(Me.EngineerHideWrenches, "Wrench" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Southern Hospitality" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Jag" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Eureka Effect")
         Me.EngineerHideWrenches.UseVisualStyleBackColor = True
         '
-        'GroupBox27
+        'GroupBoxEngineerSecondary
         '
-        Me.GroupBox27.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxEngineerSecondary.AccessibleName = "GroupBoxEngineerSecondary"
+        Me.GroupBoxEngineerSecondary.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox27.AutoSize = True
-        Me.GroupBox27.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox27.Controls.Add(Me.EngineerHideShortCircuit)
-        Me.GroupBox27.Controls.Add(Me.EngineerHidePistols)
-        Me.GroupBox27.Controls.Add(Me.EngineerHideWrangler)
-        Me.GroupBox27.Controls.Add(Me.EngineerHideSecondaryInspect)
-        Me.GroupBox27.Location = New System.Drawing.Point(196, 3)
-        Me.GroupBox27.Name = "GroupBox27"
-        Me.GroupBox27.Size = New System.Drawing.Size(187, 87)
-        Me.GroupBox27.TabIndex = 1
-        Me.GroupBox27.TabStop = False
-        Me.GroupBox27.Text = "Secondary"
+        Me.GroupBoxEngineerSecondary.AutoSize = True
+        Me.GroupBoxEngineerSecondary.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GroupBoxEngineerSecondary.Controls.Add(Me.EngineerHideShortCircuit)
+        Me.GroupBoxEngineerSecondary.Controls.Add(Me.EngineerHidePistols)
+        Me.GroupBoxEngineerSecondary.Controls.Add(Me.EngineerHideWrangler)
+        Me.GroupBoxEngineerSecondary.Controls.Add(Me.EngineerHideSecondaryInspect)
+        Me.GroupBoxEngineerSecondary.Location = New System.Drawing.Point(196, 3)
+        Me.GroupBoxEngineerSecondary.Name = "GroupBoxEngineerSecondary"
+        Me.GroupBoxEngineerSecondary.Size = New System.Drawing.Size(187, 87)
+        Me.GroupBoxEngineerSecondary.TabIndex = 1
+        Me.GroupBoxEngineerSecondary.TabStop = False
+        Me.GroupBoxEngineerSecondary.Text = "Secondary"
         '
         'EngineerHideShortCircuit
         '
@@ -1782,6 +1918,7 @@ Partial Class Form2
         '
         'EngineerHidePistols
         '
+        Me.EngineerHidePistols.AccessibleName = "EngineerHidePistols"
         Me.EngineerHidePistols.AutoSize = True
         Me.EngineerHidePistols.Location = New System.Drawing.Point(6, 19)
         Me.EngineerHidePistols.Name = "EngineerHidePistols"
@@ -1793,6 +1930,7 @@ Partial Class Form2
         '
         'EngineerHideWrangler
         '
+        Me.EngineerHideWrangler.AccessibleName = "EngineerHideWrangler"
         Me.EngineerHideWrangler.AutoSize = True
         Me.EngineerHideWrangler.Location = New System.Drawing.Point(6, 42)
         Me.EngineerHideWrangler.Name = "EngineerHideWrangler"
@@ -1804,6 +1942,7 @@ Partial Class Form2
         '
         'EngineerHideSecondaryInspect
         '
+        Me.EngineerHideSecondaryInspect.AccessibleName = "EngineerHideSecondaryInspect"
         Me.EngineerHideSecondaryInspect.AutoSize = True
         Me.EngineerHideSecondaryInspect.Location = New System.Drawing.Point(6, 65)
         Me.EngineerHideSecondaryInspect.Name = "EngineerHideSecondaryInspect"
@@ -1812,23 +1951,25 @@ Partial Class Form2
         Me.EngineerHideSecondaryInspect.Text = "Hide Secondary Inspects"
         Me.EngineerHideSecondaryInspect.UseVisualStyleBackColor = True
         '
-        'GroupBox29
+        'GroupBoxEngineerPDA
         '
-        Me.GroupBox29.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.GroupBoxEngineerPDA.AccessibleName = "GroupBoxEngineerPDA"
+        Me.GroupBoxEngineerPDA.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox29.AutoSize = True
-        Me.GroupBox29.Controls.Add(Me.EngineerHideToolbox)
-        Me.GroupBox29.Controls.Add(Me.EngineerHidePDA)
-        Me.GroupBox29.Location = New System.Drawing.Point(3, 102)
-        Me.GroupBox29.Name = "GroupBox29"
-        Me.GroupBox29.Size = New System.Drawing.Size(581, 64)
-        Me.GroupBox29.TabIndex = 2
-        Me.GroupBox29.TabStop = False
-        Me.GroupBox29.Text = "PDA"
+        Me.GroupBoxEngineerPDA.AutoSize = True
+        Me.GroupBoxEngineerPDA.Controls.Add(Me.EngineerHideToolbox)
+        Me.GroupBoxEngineerPDA.Controls.Add(Me.EngineerHidePDA)
+        Me.GroupBoxEngineerPDA.Location = New System.Drawing.Point(3, 102)
+        Me.GroupBoxEngineerPDA.Name = "GroupBoxEngineerPDA"
+        Me.GroupBoxEngineerPDA.Size = New System.Drawing.Size(581, 64)
+        Me.GroupBoxEngineerPDA.TabIndex = 2
+        Me.GroupBoxEngineerPDA.TabStop = False
+        Me.GroupBoxEngineerPDA.Text = "PDA"
         '
         'EngineerHideToolbox
         '
+        Me.EngineerHideToolbox.AccessibleName = "EngineerHideToolbox"
         Me.EngineerHideToolbox.AutoSize = True
         Me.EngineerHideToolbox.Location = New System.Drawing.Point(9, 42)
         Me.EngineerHideToolbox.Name = "EngineerHideToolbox"
@@ -1840,6 +1981,7 @@ Partial Class Form2
         '
         'EngineerHidePDA
         '
+        Me.EngineerHidePDA.AccessibleName = "EngineerHidePDA"
         Me.EngineerHidePDA.AutoSize = True
         Me.EngineerHidePDA.Location = New System.Drawing.Point(9, 19)
         Me.EngineerHidePDA.Name = "EngineerHidePDA"
@@ -1863,28 +2005,30 @@ Partial Class Form2
         Me.ClassIconList.Images.SetKeyName(7, "Leaderboard_class_soldier.png")
         Me.ClassIconList.Images.SetKeyName(8, "Leaderboard_class_spy.png")
         '
-        'InstallButton
+        'BtnInstall
         '
-        Me.InstallButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.InstallButton.Enabled = False
-        Me.InstallButton.Location = New System.Drawing.Point(526, 560)
-        Me.InstallButton.Name = "InstallButton"
-        Me.InstallButton.Size = New System.Drawing.Size(75, 23)
-        Me.InstallButton.TabIndex = 0
-        Me.InstallButton.Text = "Install"
-        Me.InstallButton.UseVisualStyleBackColor = True
+        Me.BtnInstall.AccessibleName = "BtnInstall"
+        Me.BtnInstall.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnInstall.Enabled = False
+        Me.BtnInstall.Location = New System.Drawing.Point(526, 563)
+        Me.BtnInstall.Name = "BtnInstall"
+        Me.BtnInstall.Size = New System.Drawing.Size(75, 23)
+        Me.BtnInstall.TabIndex = 0
+        Me.BtnInstall.Text = "Install"
+        Me.BtnInstall.UseVisualStyleBackColor = True
         '
-        'TF2FolderBtn
+        'BtnSelectFolder
         '
-        Me.TF2FolderBtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.TF2FolderBtn.Enabled = False
-        Me.TF2FolderBtn.Location = New System.Drawing.Point(6, 560)
-        Me.TF2FolderBtn.Name = "TF2FolderBtn"
-        Me.TF2FolderBtn.Size = New System.Drawing.Size(175, 23)
-        Me.TF2FolderBtn.TabIndex = 1
-        Me.TF2FolderBtn.Text = "Select ""Team Fortress 2"" Folder"
-        Me.ViewmodelTooltip.SetToolTip(Me.TF2FolderBtn, "test")
-        Me.TF2FolderBtn.UseVisualStyleBackColor = True
+        Me.BtnSelectFolder.AccessibleName = "BtnSelectFolder"
+        Me.BtnSelectFolder.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.BtnSelectFolder.Enabled = False
+        Me.BtnSelectFolder.Location = New System.Drawing.Point(6, 563)
+        Me.BtnSelectFolder.Name = "BtnSelectFolder"
+        Me.BtnSelectFolder.Size = New System.Drawing.Size(175, 23)
+        Me.BtnSelectFolder.TabIndex = 1
+        Me.BtnSelectFolder.Text = "Select ""Team Fortress 2"" Folder"
+        Me.ViewmodelTooltip.SetToolTip(Me.BtnSelectFolder, "test")
+        Me.BtnSelectFolder.UseVisualStyleBackColor = True
         '
         'Manual
         '
@@ -1911,7 +2055,7 @@ Partial Class Form2
         Me.TableLayoutPanel12.RowCount = 1
         Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel12.Size = New System.Drawing.Size(659, 430)
+        Me.TableLayoutPanel12.Size = New System.Drawing.Size(659, 433)
         Me.TableLayoutPanel12.TabIndex = 4
         '
         'GroupBox30
@@ -1923,7 +2067,7 @@ Partial Class Form2
         Me.GroupBox30.Controls.Add(Me.SaveButton)
         Me.GroupBox30.Location = New System.Drawing.Point(332, 3)
         Me.GroupBox30.Name = "GroupBox30"
-        Me.GroupBox30.Size = New System.Drawing.Size(324, 424)
+        Me.GroupBox30.Size = New System.Drawing.Size(324, 427)
         Me.GroupBox30.TabIndex = 2
         Me.GroupBox30.TabStop = False
         Me.GroupBox30.Text = "Output File"
@@ -1936,7 +2080,7 @@ Partial Class Form2
         Me.OutputBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OutputBox.Location = New System.Drawing.Point(6, 77)
         Me.OutputBox.Name = "OutputBox"
-        Me.OutputBox.Size = New System.Drawing.Size(312, 341)
+        Me.OutputBox.Size = New System.Drawing.Size(312, 350)
         Me.OutputBox.TabIndex = 9
         Me.OutputBox.Text = ""
         '
@@ -1961,7 +2105,7 @@ Partial Class Form2
         Me.GroupBox31.Controls.Add(Me.InputPath)
         Me.GroupBox31.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox31.Name = "GroupBox31"
-        Me.GroupBox31.Size = New System.Drawing.Size(323, 424)
+        Me.GroupBox31.Size = New System.Drawing.Size(323, 427)
         Me.GroupBox31.TabIndex = 1
         Me.GroupBox31.TabStop = False
         Me.GroupBox31.Text = "Input File"
@@ -1974,7 +2118,7 @@ Partial Class Form2
         Me.InputBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InputBox.Location = New System.Drawing.Point(6, 77)
         Me.InputBox.Name = "InputBox"
-        Me.InputBox.Size = New System.Drawing.Size(311, 341)
+        Me.InputBox.Size = New System.Drawing.Size(311, 350)
         Me.InputBox.TabIndex = 8
         Me.InputBox.Text = ""
         Me.InputBox.WordWrap = False
@@ -2007,207 +2151,156 @@ Partial Class Form2
         Me.InputPath.Size = New System.Drawing.Size(311, 20)
         Me.InputPath.TabIndex = 0
         '
-        'AboutButton
+        'BtnAbout
         '
-        Me.AboutButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AboutButton.FlatAppearance.BorderSize = 0
-        Me.AboutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AboutButton.Location = New System.Drawing.Point(544, 2)
-        Me.AboutButton.Name = "AboutButton"
-        Me.AboutButton.Size = New System.Drawing.Size(75, 23)
-        Me.AboutButton.TabIndex = 6
-        Me.AboutButton.Text = "About..."
-        Me.AboutButton.UseVisualStyleBackColor = True
+        Me.BtnAbout.AccessibleName = "BtnAbout"
+        Me.BtnAbout.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnAbout.FlatAppearance.BorderSize = 0
+        Me.BtnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnAbout.Location = New System.Drawing.Point(544, 2)
+        Me.BtnAbout.Name = "BtnAbout"
+        Me.BtnAbout.Size = New System.Drawing.Size(75, 23)
+        Me.BtnAbout.TabIndex = 6
+        Me.BtnAbout.Text = "About..."
+        Me.BtnAbout.UseVisualStyleBackColor = True
         '
         'Timer1
         '
         Me.Timer1.Interval = 10000
         '
-        'LaunchTF2Button
+        'BtnLaunchTF2
         '
-        Me.LaunchTF2Button.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LaunchTF2Button.FlatAppearance.BorderSize = 0
-        Me.LaunchTF2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LaunchTF2Button.Location = New System.Drawing.Point(448, 2)
-        Me.LaunchTF2Button.Name = "LaunchTF2Button"
-        Me.LaunchTF2Button.Size = New System.Drawing.Size(84, 23)
-        Me.LaunchTF2Button.TabIndex = 7
-        Me.LaunchTF2Button.Text = "Launch TF2"
-        Me.LaunchTF2Button.UseVisualStyleBackColor = True
+        Me.BtnLaunchTF2.AccessibleName = "BtnLaunchTF2"
+        Me.BtnLaunchTF2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnLaunchTF2.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnLaunchTF2.FlatAppearance.BorderSize = 0
+        Me.BtnLaunchTF2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnLaunchTF2.Location = New System.Drawing.Point(448, 2)
+        Me.BtnLaunchTF2.Name = "BtnLaunchTF2"
+        Me.BtnLaunchTF2.Size = New System.Drawing.Size(84, 23)
+        Me.BtnLaunchTF2.TabIndex = 7
+        Me.BtnLaunchTF2.Text = "Launch TF2"
+        Me.BtnLaunchTF2.UseVisualStyleBackColor = False
         '
-        'ItemtestCheckbox
+        'MainForm
         '
-        Me.ItemtestCheckbox.AutoSize = True
-        Me.ItemtestCheckbox.Enabled = False
-        Me.ItemtestCheckbox.Location = New System.Drawing.Point(376, 564)
-        Me.ItemtestCheckbox.Name = "ItemtestCheckbox"
-        Me.ItemtestCheckbox.Size = New System.Drawing.Size(63, 17)
-        Me.ItemtestCheckbox.TabIndex = 9
-        Me.ItemtestCheckbox.Text = "Itemtest"
-        Me.ItemtestCheckbox.UseVisualStyleBackColor = True
-        Me.ItemtestCheckbox.Visible = False
-        '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(98, 38)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(47, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "?"
-        Me.ViewmodelTooltip.SetToolTip(Me.Button1, "Due to an animation bug, the Original is always" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "hidden if any other Soldier weap" &
-        "ons are hidden." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(134, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 78)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "?" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "?"
-        Me.ViewmodelTooltip.SetToolTip(Me.Button2, "Due to the complexity of the Spy's animation files, these are always shown." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "In a" &
-        " future release, these might become hideable.")
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'GuidePictureBox
-        '
-        Me.GuidePictureBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GuidePictureBox.Image = Global.CompVMInstaller.My.Resources.Resources.compviewmodelbannersmall
-        Me.GuidePictureBox.Location = New System.Drawing.Point(3, 6)
-        Me.GuidePictureBox.Name = "GuidePictureBox"
-        Me.GuidePictureBox.Size = New System.Drawing.Size(598, 338)
-        Me.GuidePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.GuidePictureBox.TabIndex = 7
-        Me.GuidePictureBox.TabStop = False
-        '
-        'Form2
-        '
+        Me.AccessibleName = "MainForm"
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(627, 626)
-        Me.Controls.Add(Me.LaunchTF2Button)
-        Me.Controls.Add(Me.AboutButton)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.BtnLaunchTF2)
+        Me.Controls.Add(Me.BtnAbout)
+        Me.Controls.Add(Me.TabControlMenus)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(550, 360)
-        Me.Name = "Form2"
+        Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Competitive Viewmodel Installer"
-        Me.TabControl1.ResumeLayout(False)
+        Me.TabControlMenus.ResumeLayout(False)
         Me.Advanced.ResumeLayout(False)
         Me.Advanced.PerformLayout()
-        Me.ClassTabs.ResumeLayout(False)
+        CType(Me.PictureBoxGuide, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabControlClasses.ResumeLayout(False)
         Me.Scout.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GroupBoxScoutMelee.ResumeLayout(False)
+        Me.GroupBoxScoutMelee.PerformLayout()
+        Me.GroupBoxScoutSecondary.ResumeLayout(False)
+        Me.GroupBoxScoutSecondary.PerformLayout()
+        Me.GroupBoxScoutPrimary.ResumeLayout(False)
+        Me.GroupBoxScoutPrimary.PerformLayout()
         Me.Sniper.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
-        Me.GroupBox6.ResumeLayout(False)
-        Me.GroupBox6.PerformLayout()
+        Me.GroupBoxSniperMelee.ResumeLayout(False)
+        Me.GroupBoxSniperMelee.PerformLayout()
+        Me.GroupBoxSniperSecondary.ResumeLayout(False)
+        Me.GroupBoxSniperSecondary.PerformLayout()
+        Me.GroupBoxSniperPrimary.ResumeLayout(False)
+        Me.GroupBoxSniperPrimary.PerformLayout()
         Me.Soldier.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
-        Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox8.PerformLayout()
-        Me.GroupBox9.ResumeLayout(False)
-        Me.GroupBox9.PerformLayout()
+        Me.GroupBoxSoldierMelee.ResumeLayout(False)
+        Me.GroupBoxSoldierMelee.PerformLayout()
+        Me.GroupBoxSoldierSecondary.ResumeLayout(False)
+        Me.GroupBoxSoldierSecondary.PerformLayout()
+        Me.GroupBoxSoldierPrimary.ResumeLayout(False)
+        Me.GroupBoxSoldierPrimary.PerformLayout()
         Me.Demoman.ResumeLayout(False)
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
-        Me.GroupBox10.ResumeLayout(False)
-        Me.GroupBox10.PerformLayout()
-        Me.GroupBox11.ResumeLayout(False)
-        Me.GroupBox11.PerformLayout()
-        Me.GroupBox12.ResumeLayout(False)
-        Me.GroupBox12.PerformLayout()
+        Me.GroupBoxDemoMelee.ResumeLayout(False)
+        Me.GroupBoxDemoMelee.PerformLayout()
+        Me.GroupBoxDemoSecondary.ResumeLayout(False)
+        Me.GroupBoxDemoSecondary.PerformLayout()
+        Me.GroupBoxDemoPrimary.ResumeLayout(False)
+        Me.GroupBoxDemoPrimary.PerformLayout()
         Me.Medic.ResumeLayout(False)
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.TableLayoutPanel5.PerformLayout()
-        Me.GroupBox13.ResumeLayout(False)
-        Me.GroupBox13.PerformLayout()
-        Me.GroupBox14.ResumeLayout(False)
-        Me.GroupBox14.PerformLayout()
-        Me.GroupBox15.ResumeLayout(False)
-        Me.GroupBox15.PerformLayout()
+        Me.GroupBoxMedicMelee.ResumeLayout(False)
+        Me.GroupBoxMedicMelee.PerformLayout()
+        Me.GroupBoxMedicSecondary.ResumeLayout(False)
+        Me.GroupBoxMedicSecondary.PerformLayout()
+        Me.GroupBoxMedicPrimary.ResumeLayout(False)
+        Me.GroupBoxMedicPrimary.PerformLayout()
         Me.Heavy.ResumeLayout(False)
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel6.PerformLayout()
-        Me.GroupBox16.ResumeLayout(False)
-        Me.GroupBox16.PerformLayout()
-        Me.GroupBox17.ResumeLayout(False)
-        Me.GroupBox17.PerformLayout()
-        Me.GroupBox18.ResumeLayout(False)
-        Me.GroupBox18.PerformLayout()
+        Me.GroupBoxHeavyMelee.ResumeLayout(False)
+        Me.GroupBoxHeavyMelee.PerformLayout()
+        Me.GroupBoxHeavySecondary.ResumeLayout(False)
+        Me.GroupBoxHeavySecondary.PerformLayout()
+        Me.GroupBoxHeavyPrimary.ResumeLayout(False)
+        Me.GroupBoxHeavyPrimary.PerformLayout()
         Me.Pyro.ResumeLayout(False)
         Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel7.PerformLayout()
-        Me.GroupBox19.ResumeLayout(False)
-        Me.GroupBox19.PerformLayout()
-        Me.GroupBox20.ResumeLayout(False)
-        Me.GroupBox20.PerformLayout()
-        Me.GroupBox21.ResumeLayout(False)
-        Me.GroupBox21.PerformLayout()
+        Me.GroupBoxPyroMelee.ResumeLayout(False)
+        Me.GroupBoxPyroMelee.PerformLayout()
+        Me.GroupBoxPyroSecondary.ResumeLayout(False)
+        Me.GroupBoxPyroSecondary.PerformLayout()
+        Me.GroupBoxPyroPrimary.ResumeLayout(False)
+        Me.GroupBoxPyroPrimary.PerformLayout()
         Me.Spy.ResumeLayout(False)
         Me.TableLayoutPanel10.ResumeLayout(False)
         Me.TableLayoutPanel10.PerformLayout()
         Me.TableLayoutPanel8.ResumeLayout(False)
         Me.TableLayoutPanel8.PerformLayout()
-        Me.GroupBox24.ResumeLayout(False)
-        Me.GroupBox24.PerformLayout()
-        Me.GroupBox22.ResumeLayout(False)
-        Me.GroupBox22.PerformLayout()
-        Me.GroupBox23.ResumeLayout(False)
-        Me.GroupBox23.PerformLayout()
-        Me.GroupBox28.ResumeLayout(False)
-        Me.GroupBox28.PerformLayout()
+        Me.GroupBoxSpyPrimary.ResumeLayout(False)
+        Me.GroupBoxSpyPrimary.PerformLayout()
+        Me.GroupBoxSpyMelee.ResumeLayout(False)
+        Me.GroupBoxSpyMelee.PerformLayout()
+        Me.GroupBoxSpySecondary.ResumeLayout(False)
+        Me.GroupBoxSpySecondary.PerformLayout()
+        Me.GroupBoxSpyPDA.ResumeLayout(False)
+        Me.GroupBoxSpyPDA.PerformLayout()
         Me.Engineer.ResumeLayout(False)
         Me.TableLayoutPanel9.ResumeLayout(False)
         Me.TableLayoutPanel9.PerformLayout()
         Me.TableLayoutPanel11.ResumeLayout(False)
         Me.TableLayoutPanel11.PerformLayout()
-        Me.GroupBox25.ResumeLayout(False)
-        Me.GroupBox25.PerformLayout()
-        Me.GroupBox26.ResumeLayout(False)
-        Me.GroupBox26.PerformLayout()
-        Me.GroupBox27.ResumeLayout(False)
-        Me.GroupBox27.PerformLayout()
-        Me.GroupBox29.ResumeLayout(False)
-        Me.GroupBox29.PerformLayout()
+        Me.GroupBoxEngineerPrimary.ResumeLayout(False)
+        Me.GroupBoxEngineerPrimary.PerformLayout()
+        Me.GroupBoxEngineerMelee.ResumeLayout(False)
+        Me.GroupBoxEngineerMelee.PerformLayout()
+        Me.GroupBoxEngineerSecondary.ResumeLayout(False)
+        Me.GroupBoxEngineerSecondary.PerformLayout()
+        Me.GroupBoxEngineerPDA.ResumeLayout(False)
+        Me.GroupBoxEngineerPDA.PerformLayout()
         Me.Manual.ResumeLayout(False)
         Me.TableLayoutPanel12.ResumeLayout(False)
         Me.GroupBox30.ResumeLayout(False)
         Me.GroupBox31.ResumeLayout(False)
         Me.GroupBox31.PerformLayout()
-        CType(Me.GuidePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Advanced As System.Windows.Forms.TabPage
     Friend WithEvents Manual As System.Windows.Forms.TabPage
-    Friend WithEvents ClassTabs As System.Windows.Forms.TabControl
+    Friend WithEvents TabControlClasses As System.Windows.Forms.TabControl
     Friend WithEvents Scout As System.Windows.Forms.TabPage
     Friend WithEvents Soldier As System.Windows.Forms.TabPage
     Friend WithEvents Sniper As System.Windows.Forms.TabPage
@@ -2218,16 +2311,16 @@ Partial Class Form2
     Friend WithEvents Pyro As System.Windows.Forms.TabPage
     Friend WithEvents Spy As System.Windows.Forms.TabPage
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents InstallButton As Button
-    Friend WithEvents TF2FolderBtn As Button
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents BtnInstall As Button
+    Friend WithEvents BtnSelectFolder As Button
+    Friend WithEvents GroupBoxScoutPrimary As GroupBox
+    Friend WithEvents GroupBoxScoutMelee As GroupBox
+    Friend WithEvents GroupBoxScoutSecondary As GroupBox
     Friend WithEvents TableLayoutPanel10 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
-    Friend WithEvents GroupBox24 As GroupBox
-    Friend WithEvents GroupBox22 As GroupBox
-    Friend WithEvents GroupBox28 As GroupBox
+    Friend WithEvents GroupBoxSpyPrimary As GroupBox
+    Friend WithEvents GroupBoxSpyMelee As GroupBox
+    Friend WithEvents GroupBoxSpyPDA As GroupBox
     Friend WithEvents ScoutHideMelee As CheckBox
     Friend WithEvents ScoutHideDrinks As CheckBox
     Friend WithEvents ScoutHidePistols As CheckBox
@@ -2238,70 +2331,70 @@ Partial Class Form2
     Friend WithEvents ScoutHidePrimaryInspect As CheckBox
     Friend WithEvents ScoutHideScatterguns As CheckBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents GroupBoxSniperMelee As GroupBox
     Friend WithEvents SniperHideMelee As CheckBox
-    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents GroupBoxSniperSecondary As GroupBox
     Friend WithEvents SniperHideSMGs As CheckBox
     Friend WithEvents SniperHideThrowables As CheckBox
     Friend WithEvents SniperHideSecondaryInspect As CheckBox
-    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents GroupBoxSniperPrimary As GroupBox
     Friend WithEvents SniperHideHuntsman As CheckBox
     Friend WithEvents SniperHidePrimaryInspect As CheckBox
     Friend WithEvents SniperHideRifles As CheckBox
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
-    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents GroupBoxSoldierMelee As GroupBox
     Friend WithEvents SoldierHideMelee As CheckBox
-    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents GroupBoxSoldierSecondary As GroupBox
     Friend WithEvents SoldierHideBison As CheckBox
     Friend WithEvents SoldierHideShotguns As CheckBox
     Friend WithEvents SoldierHideBanners As CheckBox
     Friend WithEvents SoldierHideSecondaryInspect As CheckBox
-    Friend WithEvents GroupBox9 As GroupBox
+    Friend WithEvents GroupBoxSoldierPrimary As GroupBox
     Friend WithEvents SoldierHideMangler As CheckBox
     Friend WithEvents SoldierHideOriginal As CheckBox
     Friend WithEvents SoldierHidePrimaryInspect As CheckBox
     Friend WithEvents SoldierHideRockets As CheckBox
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
-    Friend WithEvents GroupBox10 As GroupBox
+    Friend WithEvents GroupBoxDemoMelee As GroupBox
     Friend WithEvents DemomanHideMelee As CheckBox
-    Friend WithEvents GroupBox11 As GroupBox
+    Friend WithEvents GroupBoxDemoSecondary As GroupBox
     Friend WithEvents DemomanHideStickybombs As CheckBox
     Friend WithEvents DemomanHideSecondaryInspect As CheckBox
-    Friend WithEvents GroupBox12 As GroupBox
+    Friend WithEvents GroupBoxDemoPrimary As GroupBox
     Friend WithEvents DemomanHidePrimaryInspect As CheckBox
     Friend WithEvents DemomanHideGrenades As CheckBox
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
-    Friend WithEvents GroupBox13 As GroupBox
+    Friend WithEvents GroupBoxMedicMelee As GroupBox
     Friend WithEvents MedicHideMelee As CheckBox
-    Friend WithEvents GroupBox14 As GroupBox
+    Friend WithEvents GroupBoxMedicSecondary As GroupBox
     Friend WithEvents MedicHideMediguns As CheckBox
     Friend WithEvents MedicHideSecondaryInspect As CheckBox
-    Friend WithEvents GroupBox15 As GroupBox
+    Friend WithEvents GroupBoxMedicPrimary As GroupBox
     Friend WithEvents MedicHidePrimaryInspect As CheckBox
     Friend WithEvents MedicHidePrimaries As CheckBox
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
-    Friend WithEvents GroupBox16 As GroupBox
+    Friend WithEvents GroupBoxHeavyMelee As GroupBox
     Friend WithEvents HeavyHideMelee As CheckBox
-    Friend WithEvents GroupBox17 As GroupBox
+    Friend WithEvents GroupBoxHeavySecondary As GroupBox
     Friend WithEvents HeavyHideShotguns As CheckBox
     Friend WithEvents HeavyHideConsumables As CheckBox
     Friend WithEvents HeavyHideSecondaryInspect As CheckBox
-    Friend WithEvents GroupBox18 As GroupBox
+    Friend WithEvents GroupBoxHeavyPrimary As GroupBox
     Friend WithEvents HeavyHidePrimaryInspect As CheckBox
     Friend WithEvents HeavyHideMiniguns As CheckBox
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
-    Friend WithEvents GroupBox19 As GroupBox
+    Friend WithEvents GroupBoxPyroMelee As GroupBox
     Friend WithEvents PyroHideMelee As CheckBox
-    Friend WithEvents GroupBox20 As GroupBox
+    Friend WithEvents GroupBoxPyroSecondary As GroupBox
     Friend WithEvents PyroHideShotguns As CheckBox
     Friend WithEvents PyroHideFlareGuns As CheckBox
     Friend WithEvents PyroHideThermalThruster As CheckBox
     Friend WithEvents PyroHideGasPasser As CheckBox
     Friend WithEvents PyroHideSecondaryInspect As CheckBox
-    Friend WithEvents GroupBox21 As GroupBox
+    Friend WithEvents GroupBoxPyroPrimary As GroupBox
     Friend WithEvents PyroHidePrimaryInspect As CheckBox
     Friend WithEvents PyroHideFlamethrowers As CheckBox
-    Friend WithEvents GroupBox23 As GroupBox
+    Friend WithEvents GroupBoxSpySecondary As GroupBox
     Friend WithEvents TableLayoutPanel12 As TableLayoutPanel
     Friend WithEvents GroupBox30 As GroupBox
     Private WithEvents OutputBox As RichTextBox
@@ -2321,34 +2414,33 @@ Partial Class Form2
     Friend WithEvents SpyHideInvisWatch As CheckBox
     Friend WithEvents TableLayoutPanel9 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel11 As TableLayoutPanel
-    Friend WithEvents GroupBox25 As GroupBox
+    Friend WithEvents GroupBoxEngineerPrimary As GroupBox
     Friend WithEvents EngineerHidePomson As CheckBox
     Friend WithEvents EngineerHidePrimaryInspect As CheckBox
     Friend WithEvents EngineerHideShotguns As CheckBox
-    Friend WithEvents GroupBox26 As GroupBox
+    Friend WithEvents GroupBoxEngineerMelee As GroupBox
     Friend WithEvents EngineerHideGunslinger As CheckBox
     Friend WithEvents EngineerHideMeleeInspect As CheckBox
     Friend WithEvents EngineerHideWrenches As CheckBox
-    Friend WithEvents GroupBox27 As GroupBox
+    Friend WithEvents GroupBoxEngineerSecondary As GroupBox
     Friend WithEvents EngineerHideShortCircuit As CheckBox
     Friend WithEvents EngineerHidePistols As CheckBox
     Friend WithEvents EngineerHideWrangler As CheckBox
     Friend WithEvents EngineerHideSecondaryInspect As CheckBox
-    Friend WithEvents GroupBox29 As GroupBox
+    Friend WithEvents GroupBoxEngineerPDA As GroupBox
     Friend WithEvents EngineerHideToolbox As CheckBox
     Friend WithEvents EngineerHidePDA As CheckBox
-    Private WithEvents TabControl1 As TabControl
+    Private WithEvents TabControlMenus As TabControl
     Friend WithEvents ScoutHideShortstop As CheckBox
-    Friend WithEvents UninstallButton As Button
-    Friend WithEvents Wizard As TabPage
-    Friend WithEvents AboutButton As Button
+    Friend WithEvents BtnUninstall As Button
+    Friend WithEvents BtnAbout As Button
     Friend WithEvents ViewmodelTooltip As ToolTip
-    Friend WithEvents GuidePictureBox As PictureBox
+    Friend WithEvents PictureBoxGuide As PictureBox
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents PathLabel As Label
+    Friend WithEvents LabelPath As Label
     Friend WithEvents ClassIconList As ImageList
-    Friend WithEvents LaunchTF2Button As Button
-    Friend WithEvents ItemtestCheckbox As CheckBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnLaunchTF2 As Button
+    Friend WithEvents CheckboxItemtest As CheckBox
+    Friend WithEvents BtnOriginalInfo As Button
     Friend WithEvents Button2 As Button
 End Class

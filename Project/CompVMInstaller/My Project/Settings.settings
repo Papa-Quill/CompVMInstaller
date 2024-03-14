@@ -203,5 +203,11 @@
     <Setting Name="PyroThermathruster" Type="System.String" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">20, 20, 26</Value>
+    </Setting>
+    <Setting Name="TextColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlText</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
